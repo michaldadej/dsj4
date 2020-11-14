@@ -1,0 +1,77 @@
+<hill version="DSJ4-1.5.0" author="Wojciech Schiller">
+	<location latitude="47.115900" longitude="11.681817" orientation="210" timezone="1" altitude="700"/><!--ok-->
+	<weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+	<inrun>
+		<!-- e="12.0"-->
+		<profile e="110.0" es="13" t="8.0" gamma="34" alpha="12.5" r1="138.0" s="2.00" b1="3.3" z0="0" l="0" f="8.0"/>
+		<startgate default="6" max="12" step="0.35" wind="2.8" z1="-1.2" z2="0.4" pz1="-1.2" pz2="-1.1" t1="Textures\wood5b.png" m1="Materials\material1.xml" c1="0xaba7ab" t2="Textures\rust1.png" m2="Materials\material1.xml" c2="0xbbbbbb"/>
+		<gatenumbers z="0.8" y="0" c1="0xffffffff" c2="0xff000000"/>
+		<startbanner z="0" text="GEORGIA" textsize="0.1"/>
+		<frame t0="Textures\concrete1.png" m0="Materials\material1.xml" c0="0x78a6a3" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xa4a8ad"/>
+		<flag x="7.0" z="-4.45" hf="1.2" pf="1.375" hp="8.0" rb="0.04" rt="0.03" tf="Textures\flag-geo.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff"/>
+		<guardrail z1="-1.45" z2="1.45" x="30.5"/>
+		<twigs lz="1.35" rz="-0.95"/>
+	</inrun>
+	<dhill>
+		<!--a="100"-->
+		<profile alpha="15" h="91.98" n="157.80" l1="17" l2="16.5" a="130" beta-p="36" beta="35.14" beta-l="35" rl="286" r2="75" r2x="57" r2y="19" b0="4.5" bk="34.6" ba="42.0" hr="0" nr="10" ar="0" k="180" hs="207"/>
+		<fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff"/>
+		<judgetower d="119.4" q="25" h="+4" t1="Textures\concrete5.png" m1="Materials\wood.xml" c1="0x8a8e99" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183"/>
+		<lights step="50" size="2" h="20" d="20" r="0.70" g="0.65" b="0.60" attn="0.0005" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<windflags t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<measurers c1="0x6984ab" c2="0x970b0e"/>
+		<label summer-d="100" winter-d="100" text="GEORGIA" textsize="3.0"/>
+		<plastic c="0x598d7c"/>
+		<lines summer-min="150" summer-max="205" winter-min="150" winter-max="205"/>
+		<numbers min="150" max="207"/>
+	</dhill>
+
+	<profile id="inrun-terrain">
+		<start x="-135" y="-51"/>
+		<polynom3 x="-113" y="53" k1="0" k2="-0.3"/>
+		<polynom3 x="-110" y="60" k1="0" k2="-0.3"/>
+		<polynom3 x="0" y="0" k2="0"/>
+	</profile>
+
+	<profile id="inrun-left" side="left" maxstep="1000">
+		<start x="0" y="1.5" refx="inrun"/>
+		<line x="0" y="1.5" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-right" side="right" maxstep="1000">
+		<start x="0" y="-1.5" refx="inrun"/>
+		<line x="0" y="-1.5" refx="inrun" corner="true"/>
+		<line x="0" y="-1.5" refx="inrun" corner="true"/>
+		<line x="0" y="-1.5" refx="dhill"/>
+	</profile>
+		
+	
+	<terrain>
+		<profile in="-0.1" y0="-62.0" sd="25" fd="300" sc="0.2" sm="0.62" rs="6203" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4"/>
+		<trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.5" maxaltitude="1000" normalaltitude="700" seed="23"/>
+		<houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="830" normalaltitude="600" fractalthreshold="0.3" seed="10"/>
+		<audience count="5000" d="35" x0="0" seed="423"/>
+	</terrain>	
+
+
+	<!-- guard rails -->
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="0.5" x1="0" x2="0" z="1.5" w="0.05" t="Textures\wood3.png" m="Materials\material1.xml" c="0x4d4b40"/>
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="0.5" x1="0" x2="0" z="-1.5" w="0.05" t="Textures\wood3.png" m="Materials\material1.xml" c="0x4d4b40"/>
+	
+	<!-- inrun bottom -->
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="true" pt="true" h="0.1" x1="0" x2="-0" y="-1.7" z="0" w="3" t="Textures\wood3.png" m="Materials\material1.xml" c="0x6b6960"/>
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="1.7" x1="0" x2="-0" y="-1.7" z="-1.5" w="0.05" t="Textures\wood3.png" m="Materials\material1.xml" c="0x6b6960"/>
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="1.7" x1="0" x2="-0" y="-1.7" z="1.5" w="0.05" t="Textures\wood3.png" m="Materials\material1.xml" c="0x6b6960"/>	
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="2" x1="60" x2="-5" y="-2.5" z="0" w="2.7" t="Textures\wood3.png" m="Materials\material1.xml" c="0x4d4b40"/>
+	
+	<!-- pillars -->
+	<railing refx1="inrun" refx2="dhill" guard="false" type="normal" bottom="false" pt="true" h="10" x1="0" x2="-100" y="-10.02" z="0" w="2.8" t="Textures\wood3.png" m="Materials\material1.xml" c="0x6b6960"/>
+
+	<!-- start gate stairs -->
+	<stairs refx="inrun" x1="7.6" x2="25" rz="0.60" lz="1.43" s="0.35" t1="Textures\concrete5.png" m1="Materials\material1.xml" c1="0x758bba" t2="Textures\grid.png" m2="Materials\material1.xml" c2="0x64696e"/>		
+
+	<!-- inrun lights -->
+	<lights refz="inrun-left" refy="inrun-top" step="2" l="2" h="0.4" refx="inrun" x1="9" x2="115" d="0.05" r="0.33" g="0.33" b="0.33" attn="0.1" range="2.0"/>
+	<lights refz="inrun-right" refy="inrun-top" step="2" l="2" h="0.4" refx="inrun" x1="9" x2="115" d="0.05" r="0.33" g="0.33" b="0.33" attn="0.1" range="2.0"/>
+
+</hill>

@@ -1,0 +1,66 @@
+<hill version="DSJ4-1.7.0" author="Wojciech Adamczewski">
+    <location latitude="51.229" longitude="17.07" orientation="174" timezone="1" altitude="225"/>
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+    <inrun>
+        <profile e="3.6" es="2" t="1.8" gamma="21.00" alpha="6.5" r1="12" s="0.4" b1="2.0" z0="0" l="1" f="0"/>
+        <guardrail z1="-1" z2="1" x="3"/>
+        <startgate default="2" min="1" max="3" step="0.3" wind="0.3" z1="-0.9" z2="0.9" pz1="-0.8" pz2="0.8" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585"/>
+        <gatenumbers z="1.3" y="0.01" c1="0xff000000" c2="0xffffffff" size="0.10"/>
+        <startbanner z="0" text="SMOLEC" textsize="0.14"/>
+        <frame bh="0.4" pt="false" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0"/>
+        <flag x="3.4" z="1.49" hf="0.5" pf="1.636" hp="3.0" rb="0.05" rt="0.05" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xdddddd"/>
+    </inrun>
+    <dhill>
+        <profile alpha="3.28" h="2.93" n="6.41" l1="1.0" l2="1.38" a="15" beta-p="13.7" beta="11.2" beta-l="9.8" rl="306.15" r2="4.22" b0="3" bk="4" ba="5" hr="2" nr="26" ar="0" k="3" hs="3"/>
+        <fence h="0.5" t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff"/>
+        <judgetower d="20" q="4.4" h="+0" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x5c554c" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183"/>
+        <lights step="10" size="3" h="30" d="25" r="0.97" g="0.87" b="0.40" attn="0.0002" range="1600" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+        <windflags h="-5.5" l="5.0" d="1.2" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+        <measurers c1="0x578ad1" c2="0xeeeeee"/>
+        <label d="1" text="" textsize="0.5"/>
+        <plastic c="0x769391"/>
+        <lines summer-min="3" summer-max="6" winter-min="3" winter-max="6"/>
+        <numbers min="0" max="6" h1="0.4" h2="0.4"/>
+    </dhill>
+    
+    <profile id="dhill-terrain">
+        <start x="0" y="-0.15"/>
+        <line x="72.5" y="-0.15"/>
+        <line x="73" y="0"/>
+    </profile>
+
+    <profile id="inrun-terrain">
+        <start x="-23" y="7.2"/>
+        <line x="-18" y="5.9"/>
+        <line x="-15" y="1.6"/>
+        <line x="-8" y="0.9"/>
+        <line x="-4" y="0.2"/>
+        <line x="-1" y="0.5"/>
+        <line x="0" y="0"/>
+    </profile>
+
+    <profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-11" y="1.0" refx="inrun"/>
+        <line x="0" y="1.0" refx="dhill"/>
+    </profile>
+    
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-11" y="-1.0" refx="inrun"/>
+        <line x="0" y="-1.0" refx="dhill"/>
+    </profile>
+
+    <terrain>
+        <profile in="0" a0="25.0" l0="50.0" y0="-0.0" hd="13.5" dd="175.0" sd="30" fd="300" sc="0.07" sm="0.55" rs="1531" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4"/>
+        <trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.5" maxaltitude="1500" normalaltitude="240" seed="244"/>
+        <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="2" maxfloors="5" maxaltitude="750" normalaltitude="200" fractalthreshold="0.5" seed="424"/>
+        <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1200" normalaltitude="200" fractalthreshold="0.5" seed="163"/>
+        <audience count="30" d="2" x0="4" seed="511"/>
+    </terrain>
+    
+    <pillar refx1="inrun" refx="dhill" trefy="inrun-top" brefy="terrain"
+    x1="0" x2="0"
+    lz="1" rz="-1"
+    top="false" bottom="false"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xdddddd"/>
+    
+</hill>

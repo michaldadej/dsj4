@@ -1,0 +1,737 @@
+<hill version="DSJ4-1.5.0" author="Zibi">
+	<location latitude="15.91" longitude="51.12" orientation="180" timezone="2" altitude="350"/><!--ok-->
+	<weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="0.75" precipitationprobability="0.1" fogprobability="0.1"/>
+	
+	<inrun>
+		<track type="ceramic" snow="false"/>
+		<profile e="86.5" es="15" t="6.5" gamma="32" alpha="10.75" r1="86" s="2.7" b1="1.1" z0="0.0" l="-4" f="0"/>
+		<startgate default="7" max="20" f="-0.1" step="0.3" z1="-1.2" z2="1.2" pz1="-0.8" pz2="0.8" wind="5.0" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0xaaaaaa" c3="0x2a2a2a"/>
+		<gatenumbers x="0.1" z="1.1" y="0.05" size="0.1" c1="0xff000000" c2="0x00ffffff"/>
+		<gatenumbers x="0.1" z="-1.1" y="0.05" size="0.1" c1="0xff000000" c2="0x00ffffff"/>
+		<startbanner z="0.0" text="Z Ł O T O R Y J A" textsize="0.1" t="Textures\wood2.png" c="0x5a3525" />
+		<frame bh="1.0" pt="false" snow="true" t="Textures\carpet.png" m="Materials\material1.xml" c0="0x7995a0" c1="0xaaaaaa" c="0xaaaaaa" c2="0xaaaaaa"/>
+		<flag x="66.8" z="3.0" hf="1.2" pf="2" hp="25" rb="0.05" rt="0.05" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\metal.png" mp="Materials\material1.xml" cp="0xaaaaaa"/>
+		<guardrail x="23" z1="-0.95" z2="0.95"/>
+	</inrun> 
+	<dhill>
+		<!-- a="107" -->
+		<profile alpha="5" h="35.7" n="72.5" l1="0.0" l2="25.90" a="100" beta-p="37.0" beta="35.5" beta-l="33.0" rl="100" r2="100" b0="5" bk="20" ba="35" hr="10" nr="50" ar="1" k="95" hs="106" />
+		<fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		<judgetower d="65" q="-30" t1="Textures\metal.png" h="+7" m1="Materials\wood.xml" c1="0xffffff" t2="Textures\fenceback.png" m2="Materials\wood.xml" c2="0xffffff"/>
+		<lights x0="13.75"  step="25" size="1" h="21.5" d="1.5" r="0.35" g="0.35" b="0.39" attn="0.002" range="1300" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<lights x0="-99.75" x1="-8.75" step="25" size="1" h="-11.5" d="-1.5" r="0.20" g="0.20" b="0.25" attn="0.001" range="3000" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		
+		<windflags t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" h="3.0" d="1.45" l="3.8" />
+		<measurers c1="0xab0b24" c2="0xe9e8e7"/>
+		<label winter-d="59.5" summer-d="55.5" text="ZŁOTORYJA" textsize="1.50"/>
+		<plastic c="0x0a5326"/>
+		<lines summer-min="55" summer-max="115" winter-min="60" winter-max="115"/>
+		<numbers min="50" max="115"/>
+	</dhill>
+
+	<profile id="dhill-terrain">
+		<start x="20" y="-10.15"/>
+		<line x="50" y="-7.15"/>
+		<line x="70" y="-3"/>
+		<line x="90" y="-0.1"/>
+	</profile>
+
+		<profile id="inrun-terrain">
+        <start x="-50" y="2.2"/>
+		<line x="-40" y="0.5"/>
+        <line x="-30" y="0.2"/>
+        <line x="-20" y="0.7"/>
+        <line x="-10" y="0.2"/>
+        <line x="-5" y="0.5"/>
+        <line x="-2" y="0.5"/>
+        <line x="0" y="0"/>
+    </profile>
+	
+
+
+	<profile id="inrun-left" side="left" maxstep="1000">
+		<start x="0" y="1.0" refx="inrun"/>
+		<line x="0" y="1.0" refx="dhill"/>
+	</profile>
+	
+		<profile id="inrun-central" side="left" maxstep="1000">
+		<start x="0" y="0.0" refx="inrun"/>
+		<line x="0" y="0.0" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-right" side="right" maxstep="1000">
+		<start x="0" y="-1.0" refx="inrun"/>
+		<line x="0" y="-1.0" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-frame-top" refx="inrun">
+		<start x="-11" y="0" refy="inrun-top" refyx="0"/>
+		<line x="0" y="0" refy="inrun-top"/>
+		<profile id="inrun-top"/>
+	</profile>
+	
+	<profile id="inrun-frame-bottom" refx="inrun">
+		<start x="-11" y="0" refy="inrun-frame-top" refyx="0"/>
+		<line x="0" y="0" refy="inrun-frame-top" refyx="0"/>
+		<profile id="inrun-frame-top"/>
+	</profile>
+	<terrain>
+		<profile in="0.50" x0="-120" x1="-80" y0="-20" sd="30" fd="200" sc="0.1" sm="0.55" rs="8816" c1="0x443920" c2="0x5D603A" tsc="0.001" tsm="0.4"/>
+		<trees count="100000" minheight="10" maxheight="20" fractalthreshold="1.5" maxaltitude="1500" normalaltitude="350" seed="0.5"/>
+		<houses count="500" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="4" maxaltitude="330" normalaltitude="230" fractalthreshold="0.3" seed="11"/>
+		<audience count="1000" d="10" x0="115" seed="714"/>
+	</terrain>
+		
+	    <profile id="dhill-support-right" side="right" maxstep="1000">
+        <start x="0" y="-4" refx="dhill"/>
+        <line x="95" y="-13.5" refx="dhill" refyx="0"/>
+    </profile>
+    
+    <profile id="dhill-support-left" side="left" maxstep="1000">
+        <start x="0" y="4" refx="dhill"/>
+        <line x="95" y="13.5" refx="dhill" refyx="0"/>
+    </profile>
+	    <profile id="winda" side="left" maxstep="1000">
+        <start x="-10" y="41" refx="inrun"/>
+        <line x="45" y="-6" refx="inrun" refyx="0"/>
+    </profile>
+	<profile id="dhill-pre2" side="right" maxstep="1000">
+        <start x="-6" y="40.0" refx="inrun"/>
+		<line x="-5" y="40.0" refx="inrun" />
+		<line x="-4" y="39.9" refx="inrun" />
+		<line x="-3" y="39.7" refx="inrun" />
+		<line x="-2" y="39.4" refx="inrun" />
+		<line x="-1" y="39.0" refx="inrun" />
+		<line x="0" y="38.5" refx="inrun" />
+		<line x="2" y="37.5" refx="inrun" />
+		<line x="4" y="36.4" refx="inrun" />
+		<line x="6" y="35.2" refx="inrun" />
+		<line x="8" y="33.9" refx="inrun" />
+		<line x="10" y="32.5" refx="inrun" />
+		<line x="12" y="31.0" refx="inrun" />
+		<line x="14" y="29.4" refx="inrun" />
+		<line x="16" y="27.7" refx="inrun" />
+		<line x="18" y="25.9" refx="inrun" />
+		<line x="20" y="24.0" refx="inrun" />
+		<line x="22" y="22.0" refx="inrun" />
+		<line x="24" y="19.9" refx="inrun" />
+		<line x="26" y="17.7" refx="inrun" />
+		<line x="28" y="15.4" refx="inrun" />
+		<line x="30" y="13.0" refx="inrun" />
+		<line x="32" y="10.5" refx="inrun" />
+		<line x="34" y="7.9" refx="inrun" />
+		<line x="36" y="5.2" refx="inrun" />
+		<line x="38" y="2.4" refx="inrun" />
+		<line x="40" y="-0.5" refx="inrun" />
+		<line x="42" y="-3.5" refx="inrun" />
+		<line x="44" y="-6.6" refx="inrun" />
+
+		
+    </profile>
+	   <profile id="dhill-pre" side="right" maxstep="1000">
+        <start x="-42" y="-10" refx="dhill"/>
+		<line x="-40" y="-11.7" refx="dhill" />
+		<line x="-38" y="-10.2" refx="dhill" />
+		<line x="-36" y="-8.8" refx="dhill" />
+		<line x="-34" y="-7.5" refx="dhill" />
+		<line x="-32" y="-6.3" refx="dhill" />
+		<line x="-30" y="-5.2" refx="dhill" />
+		<line x="-28" y="-4.2" refx="dhill" />
+		<line x="-26" y="-3.3" refx="dhill" />
+		<line x="-24" y="-2.5" refx="dhill" />
+		<line x="-22" y="-1.8" refx="dhill" />
+		<line x="-20" y="-1.2" refx="dhill" />
+		<line x="-18" y="-0.7" refx="dhill" />
+		<line x="-16" y="-0.3" refx="dhill" />
+		<line x="-14" y="0.0" refx="dhill" />
+		<line x="-12" y="0.2" refx="dhill" />
+		<line x="-10" y="0.3" refx="dhill" />
+		<line x="-8" y="0.4" refx="dhill" />
+		<line x="-6" y="0.4" refx="dhill" />
+		<line x="-4" y="0.3" refx="dhill" />
+		<line x="-2" y="0.2" refx="dhill" />
+        <line x="0" y="0" refy="dhill-top" refx="dhill" />
+		<line x="2" y="0" refy="dhill-top" refx="dhill" />
+		<line x="4" y="0" refy="dhill-top" refx="dhill" />
+		<line x="6" y="0" refy="dhill-top" refx="dhill" />
+		<line x="8" y="0" refy="dhill-top" refx="dhill" />
+		<line x="10" y="0" refy="dhill-top" refx="dhill" />
+		<line x="12" y="0" refy="dhill-top" refx="dhill" />
+		<line x="14" y="0" refy="dhill-top" refx="dhill" />
+		<line x="16" y="0" refy="dhill-top" refx="dhill" />
+		<line x="18" y="0" refy="dhill-top" refx="dhill" />
+		<line x="20" y="0" refy="dhill-top" refx="dhill" />
+		<line x="22" y="0" refy="dhill-top" refx="dhill" />
+		<line x="24" y="0" refy="dhill-top" refx="dhill" />
+		<line x="26" y="0" refy="dhill-top" refx="dhill" />
+		<line x="28" y="0" refy="dhill-top" refx="dhill" />
+		<line x="30" y="0" refy="dhill-top" refx="dhill" />
+		<line x="32" y="0" refy="dhill-top" refx="dhill" />
+		<line x="34" y="0" refy="dhill-top" refx="dhill" />
+		<line x="36" y="0" refy="dhill-top" refx="dhill" />
+		<line x="38" y="0" refy="dhill-top" refx="dhill" />
+		<line x="40" y="0" refy="dhill-top" refx="dhill" />
+		<line x="42" y="0" refy="dhill-top" refx="dhill" />
+		<line x="44" y="0" refy="dhill-top" refx="dhill" />
+		<line x="46" y="0" refy="dhill-top" refx="dhill" />
+		<line x="48" y="0" refy="dhill-top" refx="dhill" />
+		<line x="50" y="0" refy="dhill-top" refx="dhill" />
+		<line x="52" y="0" refy="dhill-top" refx="dhill" />
+		<line x="54" y="0" refy="dhill-top" refx="dhill" />
+		<line x="56" y="0" refy="dhill-top" refx="dhill" />
+		<line x="58" y="0" refy="dhill-top" refx="dhill" />
+		<line x="60" y="0" refy="dhill-top" refx="dhill" />
+		<line x="62" y="0" refy="dhill-top" refx="dhill" />
+		<line x="64" y="0" refy="dhill-top" refx="dhill" />
+		<line x="66" y="0" refy="dhill-top" refx="dhill" />
+		<line x="68" y="0" refy="dhill-top" refx="dhill" />
+		<line x="70" y="0" refy="dhill-top" refx="dhill" />
+		<line x="72" y="0" refy="dhill-top" refx="dhill" />
+		<line x="74" y="0" refy="dhill-top" refx="dhill" />
+		<line x="76" y="0" refy="dhill-top" refx="dhill" />
+		<line x="78" y="0" refy="dhill-top" refx="dhill" />
+		<line x="80" y="0" refy="dhill-top" refx="dhill" />
+		<line x="82" y="0" refy="dhill-top" refx="dhill" />
+		<line x="84" y="0" refy="dhill-top" refx="dhill" />
+		<line x="86" y="0" refy="dhill-top" refx="dhill" />
+		<line x="88" y="0" refy="dhill-top" refx="dhill" />
+		<line x="90" y="0" refy="dhill-top" refx="dhill" />
+    </profile>
+	
+	<profile id="podloga" side="right" maxstep="1000">
+        <start x="-5" y="41.8" refx="inrun"/>
+		<line x="0" y="41.8" refx="inrun" />
+		    </profile>
+
+<!-- ELEMENTY SKOCZNI -->
+	<!-- Konstrukcja najazdu -->
+		
+		<pillar refx1="inrun" refx2="inrun" refy="dhill-pre2" refz="inrun-central" count="19" step="4" x1="-7.2" x2="-6.8" lz="1.4" rz="-1.4" top="true" ty="0.0" by="-0.4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="inrun" refx2="inrun" trefy="inrun-top" brefy="dhill-pre2" refz="inrun-central" count="11" step="4" x1="0.8" x2="1.2" lz="1.8" rz="1.4" top="true"  ty="-0.5" by="0.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="inrun" refx2="inrun" trefy="inrun-top" brefy="dhill-pre2" refz="inrun-central" count="11" step="4" x1="0.8" x2="1.2" lz="-1.4" rz="-1.8" top="true"  ty="-0.5" by="0.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="inrun" refx2="inrun" trefy="inrun-top" brefy="dhill-pre2" refz="inrun-central" count="11" step="4" x1="0.8" x2="1.2" lz="-1.4" rz="-1.8" top="true"  ty="-0.5" by="0.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+
+
+		<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-7.2" x2="60" lz="1.8" rz="1.4" top="true" trefy="dhill-pre2" brefy="dhill-pre2" ty="0.0" by="-0.4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+ 		<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-7.2" x2="60" lz="-1.4" rz="-1.8" top="true" trefy="dhill-pre2" brefy="dhill-pre2" ty="0.0" by="-0.4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		 	
+			<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-7.0" x2="-4" lz="2.0" rz="-2.0" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.7" by="-0.8" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+ 		 	<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-4.0" x2="-3.9" lz="1.6" rz="-1.6" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.7" by="-2.8" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+ 
+ 		 	<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-4.0" x2="-0.0" lz="-1.6" rz="-2.0" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.7" by="-0.99" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			 
+ 		 	<pillar refx1="inrun" refx2="inrun" refz="inrun-central"  count="1" step="5" x1="-4.0" x2="-0.0" lz="2.0" rz="1.6" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.7" by="-0.99" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			
+		<!-- ukosy --><beamgroup refx1="inrun" refx2="inrun" refy1="inrun-top" refy2="dhill-pre2" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="1.0" x2="37.0" step="4" stepper="2" fitstep="true"
+		dy1="-0.5" dy2="0" dz="1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<beamgroup refx1="inrun" refx2="inrun" refy2="inrun-top" refy1="dhill-pre2" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="1.0" x2="37.0" step="4" stepper="2" fitstep="true"
+		dy1="0.0" dy2="-0.5" dz="1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			
+			
+		<beamgroup refx1="inrun" refx2="inrun" refy1="inrun-top" refy2="dhill-pre2" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="1.0" x2="37.0" step="4" stepper="2" fitstep="true"
+		dy1="-0.5" dy2="0" dz="-1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<beamgroup refx1="inrun" refx2="inrun" refy2="inrun-top" refy1="dhill-pre2" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="1.0" x2="37.0" step="4" stepper="2" fitstep="true"
+		dy1="0.0" dy2="-0.5" dz="-1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			
+				<!-- 2 -->
+		<pillar refx1="dhill" refx2="dhill" trefy="inrun-top" brefy="dhill-pre" refz="inrun-central" count="7" step="4" x1="-32.5" x2="-32.1" lz="1.8" rz="1.4" top="true"  ty="-0.5" by="3" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="dhill" refx2="dhill" trefy="inrun-top" brefy="dhill-pre" refz="inrun-central" count="7" step="4"  x1="-32.5" x2="-32.1" lz="-1.4" rz="-1.8" top="true"  ty="-0.5" by="3" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="dhill" refx2="dhill" trefy="inrun-top" brefy="dhill-pre" refz="inrun-central" count="7" step="4" x1="-32.5" x2="-32.1" lz="-1.4" rz="-1.8" top="true"  ty="-0.5" by="3" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<pillar refx1="dhill" refx2="dhill" refz="inrun-central"  count="1" step="5" x1="-32.5" x2="-4.5" lz="1.8" rz="1.4" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="3.0" by="2.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+ 		<pillar refx1="dhill" refx2="dhill" refz="inrun-central"  count="1" step="5" x1="-32.5" x2="-4.5" lz="-1.4" rz="-1.8" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="3.0" by="2.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<pillar refx1="dhill" refx2="dhill" trefy="inrun-top" brefy="dhill-pre" refz="inrun-central" count="1" step="4" x1="-4.5" x2="-4.1" lz="1.8" rz="1.4" top="true"  ty="-0.5" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		<pillar refx1="dhill" refx2="dhill" trefy="inrun-top" brefy="dhill-pre" refz="inrun-central" count="1" step="4"  x1="-4.5" x2="-4.1" lz="-1.4" rz="-1.8" top="true"  ty="-0.5" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<!-- ukosy --><beamgroup refx1="dhill" refx2="dhill" refy1="inrun-top" refy2="dhill-pre" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="-32.3" x2="-8.3" step="4" stepper="2" fitstep="true"
+		dy1="-0.5" dy2="3.0" dz="1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+			<beamgroup refx1="dhill" refx2="dhill" refy2="inrun-top" refy1="dhill-pre" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+			x1="-32.3" x2="-8.3" step="4" stepper="2" fitstep="true"
+		dy1="3.0" dy2="-0.5" dz="1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+		<beamgroup refx1="dhill" refx2="dhill" refy1="inrun-top" refy2="dhill-pre" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+		x1="-32.3" x2="-8.3" step="4" stepper="2" fitstep="true"
+		dy1="-0.5" dy2="3.0" dz="-1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+			<beamgroup refx1="dhill" refx2="dhill" refy2="inrun-top" refy1="dhill-pre" refz="inrun-central"
+		last="true" rect="true" smooth="false"
+			x1="-32.3" x2="-8.3" step="4" stepper="2" fitstep="true"
+		dy1="3.0" dy2="-0.5" dz="-1.6" dx2="4"
+		r="0.15" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+
+
+		
+		<!-- podkład najazdu -->
+	<pillar refx1="inrun" refx2="dhill" refrz="inrun-right" reflz="inrun-left" x1="0" x2="0.02" lz="0.1" rz="0" top="false" trefy="inrun-top" brefy="inrun-top" ty="0" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+    <pillar refx1="inrun" refx2="dhill" refrz="inrun-right" reflz="inrun-right" x1="0" x2="0.02" lz="0.1" rz="-1.3" trefy="inrun-top" brefy="inrun-top" ty="0.1" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+    <pillar refx1="inrun" refx2="dhill" refrz="inrun-left" reflz="inrun-left" x1="0" x2="0.02" lz="1.3" rz="-0.1" trefy="inrun-top" brefy="inrun-top" ty="0.1" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+    
+	<pillar refx1="inrun" refx2="dhill"  count="1" step="5" x1="-7.2" x2="-0.02" lz="0.2" rz="-0.2" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" count="1" step="5" x1="-7.2" x2="0.02" lz="-1.0" rz="-1.5" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+  
+	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" count="1" step="5" x1="-7.2" x2="0.02" lz="1.5" rz="1.0" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx1="inrun" refx2="inrun" refrz="inrun-right" reflz="inrun-left" count="19" step="4" x1="0.8" x2="1.2" lz="1.4" rz="-1.4" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+
+	
+		<!-- tor dla windy --><pillar refx1="inrun" refx2="dhill"  count="1" step="5" x1="-1.5" x2="0" lz="0.05" rz="-0.05" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.05" by="-1.15" t="Textures\metal.png" m="Materials\material1.xml" c="0xfdedd3"/>
+	<!-- winda -->
+		<pillar refx1="inrun" refx2="inrun"  count="1" step="5" x1="2.9" x2="3.1" lz="0.1" rz="-0.1" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.0" by="-1.2" t="Textures\metal.png" m="Materials\material1.xml" c="0xfdedd3" zbias="3"/>
+		<pillar refx1="inrun" refx2="inrun"  count="1" step="5" x1="2.97" x2="3.03" lz="0.05" rz="-0.05" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.2" by="-1.3" t="Textures\metal.png" m="Materials\material1.xml" c="0xfdedd3" zbias="3"/>
+		<pillar refx1="inrun" refx2="inrun"  count="1" step="5" x1="1.5" x2="4.50" lz="1.00" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.3" by="-1.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+				<pillar refx1="inrun" refx2="inrun"  count="1" step="5" x1="2.0" x2="4.00" lz="1.00" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-4.3" by="-4.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+		<pillar refx1="inrun" refx2="inrun"  count="1" step="5" x1="1.5" x2="4.50" lz="1.00" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-4.3" by="-4.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+		<pillar refx1="inrun" refx2="inrun"  count="4" step="0.75" x1="1.5" x2="2.25" lz="1.00" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty1="-4.3" ty2="-3.85" by="-4.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+		
+		<pillar refx1="inrun" refx2="inrun" count="5" step="0.72" x1="1.5" x2="1.6" lz="1.00" rz="0.95" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.35" by="-4.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+				<pillar refx1="inrun" refx2="inrun"  count="5" step="0.72" x1="1.5" x2="1.6" lz="-0.95" rz="-1.0" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.35" by="-4.35" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+	<pillar refx1="inrun" refx2="inrun"  count="4" step="0.75" x1="1.5" x2="2.25" lz="1.00" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-1.35" by1="-1.9" by2="-1.45" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3" />
+	
+			<!-- ściany -->
+		<railing refx="inrun" type="glass" y="-4.25" h="2.9" d="0.01" w="0.02" x1="1.5" x2="4.4" z="0.95" bottom="false" top="false" rear="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+		<railing refx="inrun" type="glass" y="-4.25" h="2.9" d="0.01" w="1.95" x1="1.5" x2="1.53" z="0" bottom="false" top="false" rear="true" left="false" right="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+		<railing refx="inrun" type="glass" y="-4.25" h="2.9" d="0.01" w="0.02" x1="1.5" x2="4.4" z="-0.95" bottom="false" top="false" rear="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+		<railing refx="inrun" type="glass" y="-4.25" h="2.9" d="0.01" w="2.0" x1="4.45" x2="4.4" z="0" bottom="false" top="false" rear="true" left="false" right="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+		
+		<pillar refx1="inrun" refx2="inrun"  count="2" step="1.5" x1="2.40" x2="2.5" lz="1.05" rz="1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-3.0" by="-3.10" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+		<pillar refx1="inrun" refx2="inrun"  count="2" step="1.5" x1="2.40" x2="2.5" lz="-0.95" rz="-1.00" top="true" trefy="inrun-top" brefy="inrun-top" ty="-3.0" by="-3.10" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0" zbias="3"/>
+		
+			<!-- podłoga chałuoy -->
+		<stairs s="0.5" c2="0x999999" refy="dhill-pre2" y="0" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz="-1.39" lz="1.39" d="1.7" x2="1" x1="-7" refx="inrun"/>
+		<stairs s="0.5" c2="0x999999" refy="dhill-pre2" y="-0.4" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz="1.39" lz="-1.39" d="1.7" x2="1" x1="-7" refx="inrun"/>
+		
+			<!-- konstrukcja chałuoy -->
+		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.2" x2="-7.0" lz="-1.4" rz="-1.8" top="true" trefy="inrun-top" brefy="dhill-pre2" ty="-0.5" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+  		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.1" x2="1.0" lz="-1.55" rz="-1.65" top="true" trefy="inrun-top" brefy="dhill-pre2" ty="-0.9" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+
+				<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.2" x2="-7.0" lz="1.8" rz="1.4" top="true" trefy="inrun-top" brefy="dhill-pre2" ty="-0.5" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+  		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.1" x2="1.0" lz="1.65" rz="1.55" top="true" trefy="inrun-top" brefy="dhill-pre2" ty="-0.9" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		
+		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.1" x2="-7.0" lz="1.55" rz="-1.55" top="true" trefy="inrun-top" brefy="dhill-pre2" ty="-0.9" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		
+		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-7.2" x2="-6.8" lz="2.5" rz="-2.5" top="true" trefy="inrun-top" brefy="inrun-top" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+
+	<profile id="podloga2" side="right" maxstep="1000">
+        <start x="-5" y="-3.1" refx="inrun" refy="inrun-top"/>
+		<line x="0" y="0." refx="inrun" refy="inrun-top" />
+		    </profile>
+<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-0.7" x2="0.0" lz="2.3" rz="-2.3" top="true" trefy="podloga2" brefy="inrun-top" ty1="0" by1="-0.5" ty2="0.0" by2="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+	<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-1.2" x2="-0.7" lz="2.3" rz="-2.3" top="true" trefy="podloga2" brefy="podloga2" ty1="0" by1="-0.1" ty2="0.0" by2="-0.1" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>	
+	<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-4.0" x2="-1.2" lz="1.6" rz="-1.6" top="true" trefy="podloga2" brefy="podloga2" ty1="0" by1="-0.1" ty2="0.0" by2="-0.1" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>	
+
+	<!-- drzwi --><pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-3.9" x2="-3.85" lz="1.3" rz="0.5" top="true" trefy="podloga2" brefy="podloga2" ty1="1.7" by1="0" ty2="1.7" by2="-0.1" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa" zbias="2"/>	
+		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-3.90" x2="-3.85" lz="-0.5" rz="-1.3" top="true" trefy="podloga2" brefy="podloga2" ty1="1.7" by1="0" ty2="1.7" by2="-0.1" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa" zbias="2"/>	
+	<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-3.85" x2="-3.82" lz="0.7" rz="0.55" top="true" trefy="podloga2" brefy="podloga2" ty1="0.8" by1="0.75" ty2="0.8" by2="0.75" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFFFFF" zbias="3"/>	
+		<pillar refx="inrun" refz="inrun-central" count="1" step="5" x1="-3.85" x2="-3.82" lz="-0.55" rz="-0.7" top="true" trefy="podloga2" brefy="podloga2" ty1="0.8" by1="0.75" ty2="0.8" by2="0.75" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFFFFF" zbias="3"/>	
+	
+		<!-- próg -->
+		<!-- schody wzdłuż najazdu lewe -->
+		<stairs s="0.3" c2="0x999999" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz="0.95" lz="2.00" d="0.3" x2="0" x1="0" y="0.1" refx2="dhill" refx1="inrun"/>
+		<stairs s="0.3" c2="0x999999" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz="-2.0" lz="-0.95" d="0.3" x2="0" x1="0" y="0.1" refx2="dhill" refx1="inrun"/>
+
+
+    <!-- dhill floor -->
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-left" x1="0" x2="96" lz="0.1" rz="0" top="false" trefy="dhill-top" brefy="dhill-top" ty="-0.02" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x7995a0"/>
+    <pillar zbias="2" refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="0" x2="96" lz="0.1" rz="-1.3" trefy="dhill-top" brefy="dhill-top" ty="-0.02" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+    <pillar zbias="2" refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="0" x2="96" lz="1.3" rz="-0.1" trefy="dhill-top" brefy="dhill-top" ty="-0.02" by="-0.5" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+    
+<!-- dojście do wyciągu -->
+<stairs s="0.5" c2="0x999999" refy="dhill-pre" y="-0.5" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz1="-0.2" lz1="0.2" rz2="-4.0" lz2="4.0" d="1.7" x2="0" x1="-40" refx2="dhill" refx1="dhill"/>
+<stairs s="0.5" c2="0x999999" refy="dhill-pre" y="-0.5" m2="Materials\material1.xml" t2="Textures\metal.png" c1="0xaaaaaa" m1="Materials\material1.xml" t1="Textures\metal.png" rz1="0.2" lz1="-0.2" rz2="4.0" lz2="-4.0" d="1.7" x2="0" x1="-40" refx2="dhill" refx1="dhill"/>
+	
+
+		<beamgroup refx1="dhill" refx2="dhill" refy="dhill-pre" refz="dhill-support-right"
+		last="true" rect="true" smooth="true" 
+		x1="-20" x2="80" step="5" stepper="2" fitstep="true"
+		dy1="-25.0" dy2="-0.7" dz1="-8.3" dz2="1" dx1="0" dx2="0.0"
+		r="0.25" edges="20" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+				<beamgroup refx1="dhill" refx2="dhill" refy="dhill-pre" refz="dhill-support-left"
+		last="true" rect="true" smooth="true"
+		x1="-20" x2="80" step="5" stepper="2" fitstep="true"
+		dy1="-25.0" dy2="-0.7" dz1="8.3" dz2="-1" dx1="0" dx2="0.0"
+		r="0.25" edges="20" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+		
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-left" count="24" step="5" x1="-35.8" x2="-34.5" lz="1.3" rz="-1.3" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+   <pillar refx1="dhill" refx2="dhill"  count="1" step="5" x1="-40" x2="90" lz="0.2" rz="-0.2" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="-0.5" by="-0.8" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+  <pillar refx1="dhill" refx2="dhill" refz="dhill-support-right" count="1" step="5" x1="-40" x2="90" lz="0.2" rz="-0.2" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+  <pillar refx1="dhill" refx2="dhill" refz="dhill-support-left" count="1" step="5" x1="-40" x2="90" lz="0.2" rz="-0.2" top="true" trefy="dhill-pre" brefy="dhill-pre" ty="-0.5" by="-1.0" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+
+<!-- BARIERKI -->
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top"
+		last="true" end1="true" rect="true"
+		x1="0" x2="-0.02" step="2.1" stepper="3" fitstep="true"
+		dy1="1.0" dy2="-0.5" dz="-2.10"
+		r1="0.02" r2="0.02" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x9faaad"/>
+		
+		<railing t="Textures\metal.png" y="1.0" z="-2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0.01" x1="0" refx2="dhill" refx1="inrun" w="0.04"/> 
+		<railing t="Textures\metal.png" y="0.8" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" y="0.6" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" y="0.4" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		
+		<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top"
+		last="true" end1="true" rect="true"
+		x1="0" x2="-0.02" step="2.1" stepper="3" fitstep="true"
+		dy1="1.0" dy2="-0.5" dz="2.10"
+		r1="0.02" r2="0.02" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x9faaad"/>
+		
+		<railing t="Textures\metal.png" y="1.0" z="2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0.01" x1="0" refx2="dhill" refx1="inrun" w="0.04"/> 
+		<railing t="Textures\metal.png" y="0.8" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" y="0.6" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" y="0.4" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="-0.02" x1="0" refx2="dhill" refx1="inrun" w="0.02"/> 
+		
+				<railing t="Textures\metal.png" refy="podloga2" y="1.0" z="2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-3" refx2="inrun" refx1="inrun" w="0.04"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.8" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2.8" refx2="inrun" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.6" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2" refx2="inrun" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.4" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2" refx2="inrun" refx1="inrun" w="0.02"/> 
+		
+						<railing t="Textures\metal.png" refy="podloga2" y="1.0" z="-2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-3" refx2="inrun" refx1="inrun" w="0.04"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.8" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2.8" refx2="inrun" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.6" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2" refx2="inrun" refx1="inrun" w="0.02"/> 
+		<railing t="Textures\metal.png" refy="podloga2" y="0.4" z="-2.1" c="0xffffff" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2" refx2="inrun" refx1="inrun" w="0.02"/> 
+		
+		<railing t="Textures\metal.png" refy="inrun-top" y="-0.5" z="-2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2.42" refx2="inrun" refx1="inrun" w="0.04"/> 
+		<railing t="Textures\metal.png" refy="inrun-top" y="-0.5" z="2.1" c="0x9faaad" m="Materials\material1.xml" h="0.04" d="0.0" x2="0" x1="-2.42" refx2="inrun" refx1="inrun" w="0.04"/> 
+		
+<!-- WINDBREAKS LEFT -->	
+	<profile id="windbreaker" refy="dhill-top" refx="dhill">
+		<start x="-12.5" y="0"/>
+		<polynom3 x="13.5" y="-4.2" k1="-0.3" k2="0.1"/>
+		<polynom3 x="38.5" y="-12" k1="-0.5" k2="0"/>
+		<polynom3 x="63.5" y="-23.0" k1="-0.7" k2="-0.1"/>
+		<polynom3 x="88.5" y="-36.9" k1="-0.9" k2="-0.3"/>
+		<polynom3 x="113.5" y="0" k1="-1.0" k2="-0.4"/>
+		<polynom3 x="138.5" y="0" k1="-1" k2="-0.5"/>
+		<polynom3 x="163.5" y="0" k1="-1" k2="-0.6"/>
+	</profile>	
+	
+    <pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="-11" x2="13.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="14" x2="38.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="39" x2="63.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="64" x2="88.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="-11" x2="13.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="14" x2="38.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="39" x2="63.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="64" x2="88.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\net.png" m="Materials\material1.xml" c="0x4b624d"/>
+
+	
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="-11" x2="13.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\grating3.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="14" x2="38.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\grating3.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="39" x2="63.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\grating3.png" m="Materials\material1.xml" c="0x4b624d"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" type="blend" rear="false" front="false" zbias="1" ta1="25" ta2="45" scale="10" top="true" bottom="false" pt="true"
+    x1="64" x2="88.5" rz="1.69" lz="1.71"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\grating3.png" m="Materials\material1.xml" c="0x4b624d"/>
+
+	
+	
+	<!-- VERTICAL PILLARS -->
+	<pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="5" step="25" front="true" rear="true" top="true" bottom="true"
+    x1="-11.75" x2="-10.8" rz="1.3" lz="2.1"
+    tly="1.2" try="1.2" bly="-0.9" bry="-0.9"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+		<pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="1" step="25" front="true" rear="true" top="true" bottom="true"
+    x1="-11.75" x2="-10.8" rz="1.3" lz="2.1"
+    tly="-0.9" try="-0.9" bly="-1.9" bry="-1.9"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<!-- nity --><pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="5" step="25" front="true" rear="true" top="true" bottom="true"
+				x1="-11.45" x2="-11.4" rz="1.7" lz="2.15"
+				tly="-0.8" try="-0.8" bly="-0.85" bry="-0.85"
+				t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+				<pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="5" step="25" front="true" rear="true" top="true" bottom="true"
+				x1="-11.05" x2="-11.0" rz="1.7" lz="2.15"
+				tly="-0.8" try="-0.8" bly="-0.85" bry="-0.85"
+				t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+				
+				<pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="5" step="25" front="true" rear="true" top="true" bottom="true"
+				x1="-11.45" x2="-11.4" rz="1.7" lz="2.15"
+				tly="-0.2" try="-0.2" bly="-0.25" bry="-0.25"
+				t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+				<pillar refx="dhill" refz="dhill-left" refy="dhill-top" pt="true" count="5" step="25" front="true" rear="true" top="true" bottom="true"
+				x1="-11.05" x2="-11.0" rz="1.7" lz="2.15"
+				tly="-0.2" try="-0.2" bly="-0.25" bry="-0.25"
+				t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+				
+	
+    <pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.91" lz="1.99"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.91" lz="1.99"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.49"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" trefy="windbreaker" brefy="dhill-top" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.49"
+    tly="13" try="13" bly="0" bry="0"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+	<!-- HORIZONTAL FRONT PILLARS -->
+	
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="13" try="13" bly="12.95" bry="12.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="11" try="11" bly="10.95" bry="10.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="9" try="9" bly="8.95" bry="8.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="7" try="7" bly="6.95" bry="6.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="5" try="5" bly="4.95" bry="4.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="3" try="3" bly="2.95" bry="2.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.41" lz="1.49"
+    tly="1" try="1" bly="0.95" bry="0.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+	<!-- HORIZONTAL BACK PILLARS -->
+	
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="13" try="13" bly="12.95" bry="12.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="11" try="11" bly="10.95" bry="10.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="9" try="9" bly="8.95" bry="8.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="7" try="7" bly="6.95" bry="6.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="5" try="5" bly="4.95" bry="4.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="3" try="3" bly="2.95" bry="2.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.05" x2="-11.5" rz="1.91" lz="1.99"
+    tly="1" try="1" bly="0.95" bry="0.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+	<!-- HORIZONTAL LEFT PILLARS -->
+	
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="13" try="13" bly="12.95" bry="12.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="11" try="11" bly="10.95" bry="10.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="9" try="9" bly="8.95" bry="8.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="7" try="7" bly="6.95" bry="6.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="5" try="5" bly="4.95" bry="4.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="3" try="3" bly="2.95" bry="2.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11" x2="-11.05" rz="1.41" lz="1.99"
+    tly="1" try="1" bly="0.95" bry="0.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+	<!-- HORIZONTAL RIGHT PILLARS -->
+	
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="13" try="13" bly="12.95" bry="12.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="11" try="11" bly="10.95" bry="10.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="9" try="9" bly="8.95" bry="8.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="7" try="7" bly="6.95" bry="6.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="5" try="5" bly="4.95" bry="4.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="3" try="3" bly="2.95" bry="2.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx="dhill" refz="dhill-left" refy="windbreaker" pt="true" count="5" step="25" top="true" bottom="true"
+    x1="-11.5" x2="-11.55" rz="1.41" lz="1.99"
+    tly="1" try="1" bly="0.95" bry="0.95"
+    t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+		<!-- stairs hill -->
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-left"  zbias="3"
+		x1="15" x2="110" rz="0.1" lz="1" s="0.35" y="0.1" t1="Textures\concrete1.png" m1="Materials\material1.xml" c1="0xc7c7d9" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xeeeeee"/>
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" zbias="3" 
+		x1="15" x2="110" rz="-1" lz="-0.1" s="0.35" y="0.1" t1="Textures\concrete1.png" m1="Materials\material1.xml" c1="0xc7c7d9" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xeeeeee"/>
+	
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="0" x2="110" lz="0" rz="-1" trefy="dhill-top" brefy="dhill-top" ty="0.05" by="-0.5" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="0" x2="110" lz="1" rz="0" trefy="dhill-top" brefy="dhill-top" ty="0.05" by="-0.5" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+	
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="0" x2="110" lz="1.22" rz="1.17" trefy="dhill-top" brefy="dhill-top" ty="1.25" by="1.21" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="0" x2="110" lz="1.155" rz="1.115" trefy="dhill-top" brefy="dhill-top" ty="0.81" by="0.78" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="0" x2="110" lz="1.09" rz="1.05" trefy="dhill-top" brefy="dhill-top" ty="0.41" by="0.38" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    
+	<beamgroup refx="dhill" refz="dhill-left" refy="dhill-top" last="true" end1="true" rect="true"
+		x1="0" x2="110" step="2.0" stepper="3" fitstep="true"
+		dy1="1.208" dy2="-0" dz1="1.2" dz2="1.0"
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="0" x2="110" lz="-1.17" rz="-1.22" trefy="dhill-top" brefy="dhill-top" ty="1.25" by="1.21" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="0" x2="110" lz="-1.115" rz="-1.155" trefy="dhill-top" brefy="dhill-top" ty="0.81" by="0.78" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="0" x2="110" lz="-1.05" rz="-1.09" trefy="dhill-top" brefy="dhill-top" ty="0.41" by="0.38" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+	<beamgroup refx="dhill" refz="dhill-right" refy="dhill-top" last="true" end1="true" rect="true"
+		x1="0" x2="110" step="2.0" stepper="3" fitstep="true"
+		dy1="1.208" dy2="0" dz="-1.2" dz2="-1.0"
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+		
+				<!-- stairs prehill -->
+
+
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="-28" x2="0" lz="1.18" rz="1.22" trefy="dhill-pre" brefy="dhill-pre" ty="1.21" by="1.18" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="-28" x2="0" lz="1.115" rz="1.155" trefy="dhill-pre" brefy="dhill-pre" ty="0.81" by="0.78" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-left" reflz="dhill-left" x1="-28" x2="0" lz="1.05" rz="1.09" trefy="dhill-pre" brefy="dhill-pre" ty="0.41" by="0.38" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    
+	<beamgroup refx="dhill" refz="dhill-left" refy="dhill-pre" last="true" end1="true" rect="false"
+		x1="-28" x2="0" step="2.0" stepper="1" fitstep="true"
+		dy1="1.208" dy2="-0.5" z1="-2" z2="0.9" dz1="0.3" dz2="0"
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+	<pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="-28" x2="0" lz="-1.18" rz="-1.22" trefy="dhill-pre" brefy="dhill-pre" ty="1.21" by="1.18" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="-28" x2="0" lz="-1.115" rz="-1.155" trefy="dhill-pre" brefy="dhill-pre" ty="0.81" by="0.78" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+    <pillar refx1="dhill" refx2="dhill" refrz="dhill-right" reflz="dhill-right" x1="-28" x2="0" lz="-1.05" rz="-1.09" trefy="dhill-pre" brefy="dhill-pre" ty="0.41" by="0.38" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+	<beamgroup refx="dhill" refz="dhill-right" refy="dhill-pre" last="true" end1="true" rect="false"
+		x1="-28" x2="0" step="2.0" stepper="1" fitstep="true"
+		dy1="1.208" dy2="-0.5" z1="2" z2="-0.9" dz1="-0.3" dz2="0"
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		
+		<!-- INRUN LIGHTS --><!-- prawa --><lights refz="inrun-left" refy="inrun-top" refx1="inrun" refx2="inrun" x1="1.0" x2="75" step="1.0" l="1.0" h="1.54" d="-1.07" r="0.20" g="0.20" b="0.23" attn="0.3" range="30"/>
+			<railing t="Textures\metal.png" y="1.5" z="2.1" c="0xffffff" m="Materials\material1.xml" h="0.08" d="0.0" x2="-2" x1="0" refx2="dhill" refx1="inrun" w="0.06"/>
+			<!-- słupki --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top"
+			last="false" end1="true" rect="true"
+			x1="0.0" x2="0" step="2.085" stepper="1" fitstep="true"
+			dy1="1.5" dy2="1.0" dz="2.1"
+			r1="0.02" r2="0.02" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x9faaad"/>
+			
+
+			
+		<!-- przeszklenia -->
+						
+
+	<railing refx1="inrun" refx2="dhill" type="glass" h="0.5" d="0.01" w="0.01" x1="12" x2="-0.02" z="0.93" bottom="false" top="false" rear="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+	<railing t="Textures\metal.png" y="0.5" z="0.93" c="0xffffff" m="Materials\material1.xml" h="0.02" d="0.0" x2="0" x1="12" refx2="dhill" refx1="inrun" w="0.02"/>
+
+			<!-- słupki --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top"
+			last="true" end1="true" rect="true"
+			x1="12.01" x2="-0.02" step="2.085" stepper="1" fitstep="true"
+			dy1="0.51" dy2="0.0" dz="0.93"
+			r="0.01" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			
+				<railing refx1="inrun" refx2="dhill" type="glass" h="0.5" d="0.01" w="0.01" x1="12" x2="-0.02" z="-0.93" bottom="false" top="false" rear="false" pt="true" t="Textures\metal.png" m="Materials\window.xml" c="0x33aaaaaa"/>
+	<railing t="Textures\metal.png" y="0.5" z="-0.93" c="0xffffff" m="Materials\material1.xml" h="0.02" d="0.0" x2="0" x1="12" refx2="dhill" refx1="inrun" w="0.02"/>
+
+			<!-- słupki --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top"
+			last="true" end1="true" rect="true"
+			x1="12.01" x2="-0.02" step="2.085" stepper="1" fitstep="true"
+			dy1="0.51" dy2="0.0" dz="-0.93"
+			r="0.01" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+			
+			
+
+</hill>
