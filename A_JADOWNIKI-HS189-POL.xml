@@ -2,10 +2,19 @@
     <location latitude="49.842" longitude="24.0319" orientation="67" timezone="1" altitude="300"/>
     <weather pollution="0.0" firstsnow="330" lastsnow="95" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.5"/>
     <inrun>
-		<!-- profile e=dlugosc rozbiegu, es=dlugosc strefy z belkami, t=dlugosc wyjscia z progu-->
-        <profile e="92.0" es="10" t="14.11" gamma="35.7" alpha="10.7" r1="149" s="2.5" b1="2.0" z0="0" l="2" f="0.5"/>
+		<!-- 
+		<inrun><profile> 
+		e=dlugosc rozbiegu
+		es=dlugosc strefy z belkami
+		t=dlugosc progu
+		gamma=kąt prostej części najazdu
+		alpha=kąt progu
+		r1=kąt krzywej przejścia na koniec krzywej przejścia
+		s=wysokość progu
+		-->
+        <profile e="101.0" es="10" t="13.11" gamma="31.7" alpha="10.7" r1="139" s="1.75" b1="2.0" z0="0" l="2" f="0.5"/>
         <guardrail z1="-1.5" z2="1.5" x="22"/>
-        <startgate default="8" max="18" step="0.5" wind="1.8" z1="-1.3" z2="1.3" pz1="-1" pz2="1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585"/>
+        <startgate default="10" max="18" step="0.5" wind="1.8" z1="-1.3" z2="1.3" pz1="-1" pz2="1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585"/>
         <gatenumbers z="1.7" y="-0.15" c1="0xffFFD94B" c2="0xffBC05E8" size="0.21"/>
         <startbanner z="0" text="JADOWNIKI - BOCHENIEC" textsize="0.16"/>
         <frame bh="1.5" pt="false" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0"/>
@@ -13,15 +22,29 @@
         <twigs lz="1.2" rz="-1.2"/>
     </inrun>
     <dhill>
-        <profile alpha="6.48" h="67.93" n="119.41" l1="24.0" l2="42.38" a="47.5" beta-p="38.7" beta="37.2" beta-l="32.8" rl="306.15" r2="103.25" b0="10" bk="29.39" ba="33" hr="18" nr="80" ar="15" k="143" hs="189"/>
+        <profile alpha="6.48" h="67.93" n="119.41" l1="24.0" l2="42.38" a="47.5" beta-p="38.7" beta="37.2" beta-l="32.8" rl="306.15" r2="103.25" b0="10" bk="29.39" ba="33" hr="18" nr="80" ar="15" k="148" hs="189"/>
          <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xf5fff0"/>
-        <judgetower d="80.5" q="18.5" h="+10" t1="Textures\concrete5.png" m1="Materials\material1.xml" c1="0xd2d2d2" t2="Textures\wood3.png" m2="Materials\material1.xml" c2="0xd2d2d7"/>
-        <lights x0="10" step="35" size="2.2" h="28" d="25" r="0.45" g="0.45" b="0.5" attn="0.0010" range="550" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
-        <lights side="right" x0="10" step="35" size="2.2" h="28" d="25" r="0.45" g="0.45" b="0.5" attn="0.0010" range="550" t="Textures\rust1.png" m="Materials\metal.xml" c="0x997799"/>
+        <!-- 
+		<dhill><judgetower> 
+		d	Float	The position relative to the X-axis // im wyższa wartość tym niżej jest wieża
+h		h	Float	The position relative to the Y-axis // jak za wysoko to może być oderwana od ziemi
+q		q   Float	The position relative to the Z-axis // im większe, tym dalej od zeskoku
+		[t, m, c]1	[Texture, Material, Color]	Judge tower outside texture, material and color
+		[t, m, c]2	[Texture, Material, Color]	Judge tower inside texture, material and colo
+		-->
+		<judgetower d="96" q="39.9" h="+24" t1="Textures\concrete5.png" m1="Materials\material1.xml" c1="0xd2d2d2" 
+											  t2="Textures\wood3.png" m2="Materials\material1.xml" c2="0xd2d2d2"/>
+						  
+		<lights x0="10" step="35" size="2.2" h="28" d="25" r="0.45" g="0.45" b="0.5" attn="0.0010" range="550" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+        <!-- 
+		<dhill><lights side="right"> 
+		c=kolor lamp z boku
+		-->
+		<lights side="right" x0="10" step="35" size="2.2" h="28" d="25" r="0.45" g="0.45" b="0.5" attn="0.0010" range="550" t="Textures\rust1.png" m="Materials\metal.xml" c="0x050B44"/>
 
 		<windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
         <measurers c1="0x578ad1" c2="0xeeeeee"/>
-        <label summer-d="75" winter-d="75" text="JADOWNIKI K143 HS 189" textsize="2.5"/>
+        <label summer-d="75" winter-d="75" text="JADOWNIKI HS189" textsize="3.5"/>
         <plastic c="0x77a178"/>
         <lines summer-min="90" summer-max="150" winter-min="90" winter-max="150"/>
         <numbers min="50" max="150"/>
