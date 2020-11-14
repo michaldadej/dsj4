@@ -29,7 +29,7 @@
         <lights side="right" x0="10" step="35" size="2.2" h="28" d="25" r="0.45" g="0.45" b="0.5" attn="0.0010" range="550" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
 
 		<windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
-        <measurers c1="0x578ad1" c2="0xeeeeee"/>
+        <measurers c1="0x578ad1" c2="0x474747"/>
         <label summer-d="75" winter-d="75" text="JADOWNIKI MAŁOPOLSKA" textsize="1.8"/>
         <plastic c="0x799377"/>
         <lines summer-min="120" summer-max="220" winter-min="120" winter-max="220"/>
@@ -143,12 +143,12 @@
 		last="true" end1="true" rect="true"
 		x1="25" x2="27" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="-26.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		x1="25" x2="27" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="-24.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 
 		
 
@@ -157,76 +157,76 @@
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="-26.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="-26.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="6" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="-26.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="-26.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="-26.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="-26.5" dz2="-26.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="-26.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="-24.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="-24.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="-24.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="8" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="-24.5" dz2="-26.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		
 		
@@ -241,12 +241,12 @@
 		last="true" end1="true" rect="true"
 		x1="60" x2="62" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="-26.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		x1="60" x2="62" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="-24.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 
 		
 
@@ -255,76 +255,76 @@
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="-26.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="-26.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="-26.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="-26.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="-26.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="-26.5" dz2="-26.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="-26.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="-24.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="-24.5" dz2="-24.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="-24.5" dz2="-24.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="-24.5" dz2="-26.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-12" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="-24.5" dz2="-26.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 
 
 		
@@ -420,12 +420,12 @@
 		last="true" end1="true" rect="true"
 		x1="25" x2="27" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="29.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		x1="25" x2="27" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="27.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 
 		
 
@@ -434,76 +434,76 @@
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="29.5" dz2="29.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="25" dx2="25" dz1="29.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="6" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="29.5" dz2="27.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="27" dz1="29.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="29.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="29.5" dz2="29.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="29.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="10" step="4" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="27.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="8" step="4" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="27.5" dz2="27.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="27.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="10" step="2" stepper="1" fitstep="false"
 		dx1="25" dx2="27" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="8" step="2" stepper="1" fitstep="false"
 		dx1="27" dx2="25" dz1="27.5" dz2="29.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xFFDE6F"/>
 		<!-- słup prawy 2 -->	<!-- beton -->
 		<pillar refx1="inrun" refx2="inrun" top="true" edges="10" step="-0.81" count="1" x1="59.5" x2="62.5" rz="25.5" lz="28.5" trefy="inrun-top" brefy="inrun-top" ty1="30.5" by1="28.0" ty2="30" by2="28" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>
 		<pillar refx1="inrun" refx2="inrun" top="true" edges="10" step="-0.81" count="1" x1="59.5" x2="62.5" rz="25.5" lz="28.5" trefy="inrun-top" brefy="inrun-top" ty1="-1" by1="-20.0" ty2="0" by2="-28" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>
@@ -514,12 +514,12 @@
 		last="true" end1="true" rect="true"
 		x1="60" x2="62" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="29.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		x1="60" x2="62" step="4" stepper="2" fitstep="false"
 		dy1="-50.9" dy2="28.0" dz="27.5" dx1="0" dx2="0.0"
-		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.1" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 
 		
 
@@ -528,76 +528,76 @@
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="29.5" dz2="27.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="60" dx2="60" dz1="29.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="29.5" dz2="27.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="62" dz1="29.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="29.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="29.5" dz2="29.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="29.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="2" y2="-10" step="4" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="27.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-48" dy2="2" y2="-12" step="4" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="27.5" dz2="27.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="27.5" dz2="27.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-10" step="2" stepper="1" fitstep="false"
 		dx1="60" dx2="62" dz1="27.5" dz2="29.5"
-		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.07" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		y1="-50" dy2="0" y2="-12" step="2" stepper="1" fitstep="false"
 		dx1="62" dx2="60" dz1="27.5" dz2="29.5"
-		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		<!-- olinowanie słup prawy 2 -->
 			  <beam refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left"
 		last="true" end1="true" rect="true"
@@ -688,43 +688,43 @@
 	<pillar refx="dhill" step="5" count="14" x1="-75.2" x2="-74.8" rz="-2.7" lz="-2.5" trefy="inrun-top" brefy="inrun-top" ty1="-0.2" by1="-0.6" ty2="-0.2" by2="-0.6" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
 
 <!-- kratownice pod rozbiegiem -->
-	<!-- lewa góra --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="-2.5" y="-0.9" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
-	<!-- lewa dół --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="-2.5" y="-2.1" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
-	<!-- prawa góra --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="2.5" y="-0.9" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
-	<!-- prawy dół --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="2.5" y="-2.1" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+	<!-- lewa góra --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="-2.5" y="-0.9" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
+	<!-- lewa dół --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="-2.5" y="-2.1" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
+	<!-- prawa góra --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="2.5" y="-0.9" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
+	<!-- prawy dół --><railing refx1="inrun" refx2="dhill" h="0.2" d="0" w="0.3" x1="-0.1" x2="-3" z="2.5" y="-2.1" pt="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 	<!-- słupki pionowe lewa --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-2.0" dy2="-0.8" dz="-1.0" dx1="0" dx2="0.0"
-		r="0.08" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.08" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 	<!-- słupki pionowe prawa --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-2.0" dy2="-0.8" dz="1.0" dx1="0" dx2="0.0"
-		r="0.08" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.08" edges="4" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 	<!-- słupki poziome  dół--><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz1="inrun-right" refz2="inrun-left"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-2.0" dy2="-1.90" dz1="-1.0" dz2="4" dx1="0" dx2="0.0"
-		r="0.08" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.08" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 	<!-- słupki poziome  góra --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz1="inrun-right" refz2="inrun-left"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-0.8" dy2="-0.8" dz1="-1.0" dz2="4" dx1="0" dx2="0.0"
-		r="0.06" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.06" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 	<!-- słupki skośne 1 --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz1="inrun-right" refz2="inrun-left"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-0.8" dy2="-2.0" dz1="-1.0" dz2="4" dx1="0" dx2="0.0"
-		r="0.04" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.04" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 	<!-- słupki skośne 2 --><beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz1="inrun-right" refz2="inrun-left"
 		last="true" end1="true" rect="true"
 		x1="0.1" x2="-3.1" step="2" stepper="2" fitstep="false"
 		dy1="-2.0" dy2="-0.8" dz1="-1.0" dz2="4" dx1="0" dx2="0.0"
-		r="0.04" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xeeeeee"/>
+		r="0.04" edges="10" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x474747"/>
 		
 
 <!-- klatka schodowa -->
