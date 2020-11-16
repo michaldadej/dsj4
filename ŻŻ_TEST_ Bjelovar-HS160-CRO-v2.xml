@@ -1,0 +1,177 @@
+<hill version="DSJ4-1.5.0" author="Xinitiao">
+	<location latitude="45.919946" longitude="16.835663" orientation="100" timezone="1" altitude="150"/><!--ok-->
+	<weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+	<inrun>
+		<profile e="93" es="24.2" t="5.5" gamma="34" alpha="11" r1="100" s="1.2" b1="2" z0="0" l="0" f="0"/>
+		<startgate default="23" max="35" step="0.54" wind="3.2" z1="-1.2" z2="1.3" pz1="-1.15" pz2="1.25" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xa5a5a5" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0xc0c0c0"/>
+		<gatenumbers z="1.2" y="-0.15" size="0.2" c1="0xffffffff" c2="0xff55beb3"/>
+		<startbanner z="0" text="BJELOVAR" textsize="0.1"/>
+		<frame bh="1.2" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x955beb3" t0="Textures\carpet.png" m0="Materials\metal.xml" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
+		<flag x="11.0" z="9.45" hf="5" pf="1.5" hp="14" rb="0.04" rt="0.03" tf="Textures\flag-cro.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff"/>
+		<guardrail z1="-1" z2="1" x="22"/>
+		<twigs lz="0.9" rz="-0.9"/>
+		<track type="ceramic" snow="false"/>
+	</inrun>
+	<dhill>
+		<profile alpha="1" h="70" n="120" l1="35" l2="25" a="40" beta-p="38" beta="35" beta-l="32" rl="55" r2="103" b0="5" bk="26" ba="36" hr="-10" nr="130" ar="1" k="145" hs="160" x0="4.5" />
+		<fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+		<judgetower d="96" q="14" h="+3" t1="Textures\wood4.png" m1="Materials\wood.xml" c1="0x55beb4" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xeebeb4"/>
+		 <lights x0="-50" step="40" size="2" h="14" d="20" r="0.70" g="0.65" b="0.60" attn="0.001" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<windflags h="2" d="4" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<measurers c1="0x6984ab" c2="0x970b0e"/>
+		<label d="75" text="BJELOVAR" textsize="3.0"/>
+		<plastic c="0x55beb3"/>
+		<lines summer-min="105" summer-max="170" winter-min="105" winter-max="170" />
+		<numbers min="80" max="175" h1="0.5" h2="0.75"/>
+	</dhill>
+	
+	<profile id="inrun-terrain">
+		<start x="-120" y="-30"/>
+		<line x="-90" y="0"/>
+		<line x="0" y="0"/>
+		<line x="3" y="0"/>
+	</profile>
+
+	<profile id="inrun-left" side="left" maxstep="1000">
+		<start x="-80" y="1" refx="inrun"/>
+		<line x="0" y="1" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-right" side="right" maxstep="1000">
+		<start x="-80" y="-1" refx="inrun"/>
+		<line x="0" y="-1" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-frame-top" refx="inrun">
+		<start x="-11" y="0" refy="inrun-top" refyx="0"/>
+		<line x="0" y="0" refy="inrun-top"/>
+		<profile id="inrun-top"/>
+	</profile>
+	
+	<profile id="inrun-frame-bottom" refx="inrun">
+		<start x="-11" y="0" refy="inrun-frame-top" refyx="0"/>
+		<line x="0" y="0" refy="inrun-frame-top" refyx="0"/>
+		<profile id="inrun-frame-top"/>
+	</profile>
+		
+	<terrain>
+		<profile in="1" x0="-103" x1="-83" y0="-80" sd="30" fd="450" sc="0.05" sm="0.6" rs="9412" c1="0x443920" c2="0x5D603A" tsc="0.001" tsm="0.4"/>
+		<trees count="20000" minheight="10" maxheight="20" fractalthreshold="0.4" maxaltitude="600" normalaltitude="100" seed="74"/>
+		<blocks count="400" minsaturation="0.0" maxsaturation="0.2" minfloors="7" maxfloors="20" maxaltitude="220" normalaltitude="100" fractalthreshold="0.3" seed="15"/>
+		<houses count="500" minsaturation="0.1" maxsaturation="0.2" minfloors="2" maxfloors="4" maxaltitude="220" normalaltitude="100" fractalthreshold="0.3" seed="48"/>
+		<audience count="5000" d="15" x0="10" seed="761"/>
+	</terrain>
+	<stairs s="0.54" refx="inrun" refz="inrun-right" c2="0xeebeb3" m2="Materials\wood.xml" t2="Textures\wood4.png" c1="0x55beb3" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="0" x2="20.97" rz="2" lz="4" />
+	<!--reiling-->
+	<railing t="Textures\wood4.png" y="-2.02" c="0x55beb3" m="Materials\wood.xml" h="2.0" refx1="inrun" refx2="dhill" w="2.0"/>
+	
+	<pillar refx="inrun"
+	x1="-4" x2="20.94" 
+	lz="3" rz="1"
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="0" tly2="0" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0xeebeb3"/>
+	<pillar refx="inrun"
+	x1="-2" x2="10" 
+	lz="3.1" rz="3"
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1.5" try1="1.5" tly2="1.5" try2="1.5" t="Textures\wood4.png" m="Materials\wood.xml" c="0xeebeb3"/>
+	<pillar refx="inrun"
+	x1="-4" x2="0" 
+	lz="1" rz="-1"
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1" try1="1" tly2="1" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0xeebeb3"/>
+	<pillar refx="inrun"
+	x1="0" x2="10" 
+	lz="-1" rz1="-1" rz2="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0xeebeb3"/>
+<pillar refx="inrun"
+	x1="10" x2="20.94" 
+	lz="3.1" rz="3"
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1.5" try1="1.5" tly2="1.5" try2="1.5" t="Textures\wood4.png" m="Materials\wood.xml" c="0xccbeb3"/>
+<pillar refx="inrun"
+	x1="10" x2="20.94" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0xccbeb3"/>
+<pillar refx="inrun"
+	x1="20.94" x2="30" 
+	lz1="3.1" lz2="3" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1.5" try1="0" tly2="1" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0xaabeb3"/>
+	<pillar refx="inrun"
+	x1="20.94" x2="30" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0xaabeb3"/>
+<pillar refx="inrun"
+	x1="30" x2="40" 
+	lz="3" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1" try1="0" tly2="1" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x88beb3"/>
+	<pillar refx="inrun"
+	x1="30" x2="40" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0x88beb3"/>
+<pillar refx="inrun"
+	x1="40" x2="50" 
+	lz="3" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1" try1="0" tly2="1" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x66beb3"/>
+	<pillar refx="inrun"
+	x1="40" x2="50" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0x66beb3"/>
+	<pillar refx="inrun"
+	x1="50" x2="60" 
+	lz="3" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1" try1="0" tly2="1" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x44beb3"/>
+	<pillar refx="inrun"
+	x1="50" x2="60" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="1" t="Textures\wood4.png" m="Materials\wood.xml" c="0x44beb3"/>
+	<pillar refx="inrun"
+	x1="60" x2="70" 
+	lz="3" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="1" try1="0" tly2="0.5" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x22beb3"/>
+	<pillar refx="inrun"
+	x1="60" x2="70" 
+	lz="-1" rz="-3" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="1" tly2="0" try2="0.5" t="Textures\wood4.png" m="Materials\wood.xml" c="0x22beb3"/>
+	<pillar refx="inrun"
+	x1="70" x2="82" 
+	lz1="3" lz2="1.01" rz="1" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0.5" try1="0" tly2="0.1" try2="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x00beb3"/>
+	<pillar refx="inrun"
+	x1="70" x2="82" 
+	lz="-1" rz1="-3" rz2="-1.01" 
+	top="true" bottom="false" 
+	trefy="inrun-frame-bottom" brefy="terrain"  
+	tly1="0" try1="0.5" tly2="0" try2="0.1" t="Textures\wood4.png" m="Materials\wood.xml" c="0x00beb3"/>
+	
+	</hill>

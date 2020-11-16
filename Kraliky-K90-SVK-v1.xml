@@ -1,0 +1,55 @@
+<hill version="DSJ4-1.5.0" author="Wojciech Schiller">
+    <location latitude="50.0838" longitude="16.7605" orientation="245" timezone="2" altitude="550" />
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
+    <inrun>
+        <profile e="71" es="15" t="6.4" gamma="33.5" alpha="10.5" r1="105" s="0.3" b1="2.0" z0="0" l="3" f="0" />
+        <guardrail z1="-2.0" z2="2.0" x="35" />
+        <startgate default="1" max="1" step="0.35" wind="2.4" z1="-2" z2="2" pz1="-2" pz2="2" t1="Textures\wood3.png" m1="Materials\material1.xml" c1="0x69481e" t2="Textures\wood3.png" m2="Materials\material1.xml" c2="0x69481e" t3="Textures\wood3.png" m3="Materials\material1.xml" c3="0x69481e" />
+        <startbanner z="0" text="KRALIKY" textsize="0.1" />
+        <frame bh="2.0" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
+        <flag x="12.5" z="4.55" hf="1.4" pf="1.5" hp="19.0" rb="0.07" rt="0.05" tf="Textures\flag-svk.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
+        <twigs lz="1.8" rz="-1.8" />
+    </inrun>
+    <dhill>
+        <profile x0="1" alpha="9.9" h="49.5" n="78.95" l1="16.04" l2="13.38" a="87.5" beta-p="38" beta="35" beta-l="34" rl="306.15" r2="73.22" b0="13" bk="23.37" ba="25" hr="0" nr="0" ar="0" k="90" hs="90" />
+        <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" h="0.01" />
+        <judgetower d="68.5" q="25.4" h="+4" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x78554e" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
+        <lights step="60" size="3" h="30" d="25" r="0.70" g="0.65" b="0.60" attn="0.0005" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <measurers c1="0x578ad1" c2="0xeeeeee" />
+        <label summer-d="55" winter-d="55" text="KRALIKY" textsize="2.5" />
+        <plastic c="0x769391" />
+        <lines summer-min="70" summer-max="100" winter-min="70" winter-max="100" />
+        <numbers min="50" max="100" />
+    </dhill>
+
+    <profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-10" y="2.0" refx="inrun" />
+        <line x="0" y="2.0" refx="dhill" />
+    </profile>
+
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-10" y="-2.0" refx="inrun" />
+        <line x="0" y="-2.0" refx="dhill" />
+    </profile>
+
+	<profile id="inrun-terrain">
+		<start x="-20" y="0.22"/>
+		<line x="-5" y="0.24"/>
+		<line x="0" y="0.27"/>		
+	</profile>
+
+    <terrain>
+        <profile in="1" a0="5.0" l0="50.0" x1="-150" y0="-55.0" hd="13.5" dd="25.0" sd="30" fd="200" sc="0.07" sm="0.47" rs="4660" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4" />
+        <trees count="20000" minheight="10" maxheight="20" fractalthreshold="2500" maxaltitude="1600" normalaltitude="350" seed="142" />
+        <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
+        <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
+        <audience count="5000" d="20" x0="-15" seed="413" />
+    </terrain>
+
+	<!-- płachty czerwone -->
+	<railing refx="dhill" refy="dhill-top" refz="dhill-right" x1="75" x2="100" z="0.25" pt="true" h="0.01" w="1" scale="0.2" t="Textures\metal.png" m="Materials\material1.xml" c="0xca0707"/>
+	<railing refx="dhill" refy="dhill-top" refz="dhill-left" x1="75" x2="100" z="0.25" pt="true" h="0.01" w="1" scale="0.2" t="Textures\metal.png" m="Materials\material1.xml" c="0xca0707"/>
+	
+
+</hill>
