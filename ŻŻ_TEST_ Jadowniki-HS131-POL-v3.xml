@@ -59,27 +59,45 @@
 <!--XXXXXXXXXXXXXXXX[ wieża do wjazdu na górę ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="8.1" y2="8" refx="inrun" refy="inrun-top" z="0" y="4" r="7" edges="100" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="8" y2="-3" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7" z1="-14.36" z2="-14.36" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="10.0" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7.1" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7.3" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7.5" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7.7" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+7.9" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+8.1" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+8.3" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+8.5" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+8.7" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+8.9" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+9.1" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+9.3" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+9.5" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+9.7" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+9.9" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+10.1" z1="-5.76" z2="-5.76" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<!-- platforma główna wieży poniżej -->
+	<beam x="+6.7" z1="-14.36" z2="-14.36" y1="-0.8" y2="-1" refx="inrun" refy="inrun-top" z="0" y="4" r="10" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+<!-- spojenie wieży i najazdu -->
+	<beam x="+1.1" z1="-20.3" z2="-20.3" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-18.7" z2="-18.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-17.4" z2="-17.4" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-15.7" z2="-15.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-14.5" z2="-14.5" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-12.7" z2="-12.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-11.6" z2="-11.6" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-9.7" z2="-9.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-8.7" z2="-8.7" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-6.7" z2="-6.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-5.8" z2="-5.8" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-3.8" z2="-3.8" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="-2.9" z2="-2.9" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+1.1" z1="-2" z2="-2" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+1.1" z1="+0" z2="+0" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+<!-- -->
+	<beam x="+4" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+4.1" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+4.3" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+4.5" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+4.7" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+4.9" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+5.1" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+5.3" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+5.5" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+5.7" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+5.9" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+6.1" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+6.3" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+6.5" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+6.7" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+6.9" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="0.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+7.1" z1="-11.02" z2="-11.02" y1="-3" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.2" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="-8" y2="-6.1" refx="inrun" refy="inrun-top" z="0" y="4" r="1.2" edges="100" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="-5" y2="-3.1" refx="inrun" refy="inrun-top" z="0" y="4" r="1.2" edges="100" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
-	<beam x="+7" z1="-14.36" z2="-14.36" y1="-3.1" y2="-10" refx="inrun" refy="inrun-top" z="0" y="4" r="1.0" edges="40" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+7" z1="-14.36" z2="-14.36" y1="-1.1" y2="-10" refx="inrun" refy="inrun-top" z="0" y="4" r="1.0" edges="40" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="-10" y2="-8.9" refx="inrun" refy="inrun-top" z="0" y="4" r="8.0" edges="80" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
 	<beam x="+7" z1="-14.36" z2="-14.36" y1="-8.6" y2="-24.1" refx="inrun" refy="inrun-top" z="0" y="4" r="7" edges="80" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->
@@ -89,8 +107,9 @@
 	<beam x="+92" z1="+11.36" z2="+11.36" y1="0" y2="-12.1" refx="inrun" refy="inrun-top" z="0" y="4" r="4.0" edges="180" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->	
 <!--XXXXXXXXXXXXXXXX[ wieża dla sędziów ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-	<beam x="+162" z1="+28.36" z2="+24.36" y1="-20" y2="-120.1" refx="inrun" refy="inrun-top" z="0" y="4" r="2.0" edges="90" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->	
+	<beam x="+162" z1="+28.36" z2="+24.36" y1="-24" y2="-120.1" refx="inrun" refy="inrun-top" z="0" y="4" r="3.0" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+162" z1="+28.36" z2="+24.36" y1="-25" y2="-120.1" refx="inrun" refy="inrun-top" z="0" y="4" r="3.2" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+		<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->	
 <!--XXXXXXXXXXXXXXXX[ teren ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     <terrain>
         <profile in="0.7" a0="5.0" l0="50.0" y0="-15.0" hd="13.5" dd="75.0" sd="30" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4" />
