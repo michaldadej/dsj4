@@ -62,6 +62,7 @@
 	<!-- platforma główna wieży poniżej -->
 	<beam x="+6.7" z1="-14.36" z2="-14.36" y1="-0.8" y2="-1" refx="inrun" refy="inrun-top" z="0" y="4" r="10" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 <!-- spojenie wieży i najazdu -->
+	<beam x="+3.92" z1="-20.3" z2="-20.3" y1="-3.27" y2="-4.97" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
 	<beam x="+1.1" z1="-20.3" z2="-20.3" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
 	<beam x="+1.1" z1="-18.7" z2="-18.7" y1="-4.2" y2="-5.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<beam x="+1.1" z1="-17.4" z2="-17.4" y1="-4" y2="-5.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
