@@ -15,8 +15,11 @@
     <dhill>
         <profile alpha="6.34" h="62.93" n="107.41" l1="16.04" l2="13.38" a="87.5" beta-p="37.7" beta="34.7" beta-l="32.2" rl="306.15" r2="73.22" b0="9.5" bk="23.37" ba="25" hr="10" nr="60" ar="10" k="120" hs="131" />
         <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" />
-        <judgetower d="111.5" q="15.4" h="+2" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x78554e" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
-        <lights step="60" size="3" h="30" d="25" r="0.70" g="0.65" b="0.60" attn="0.0005" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        
+		<!--XXXXXXXXXXXXXXXX[ judgetower ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+		<judgetower d="72.9" q="-27.4" h="+12.5" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x78554e" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		<lights step="60" size="3" h="30" d="25" r="0.70" g="0.65" b="0.60" attn="0.0005" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
         <windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
         <measurers c1="0x578ad1" c2="0xeeeeee" />
         <label summer-d="75" winter-d="75" text="JADOWNIKI" textsize="2.5" />
@@ -60,13 +63,13 @@
 	
 	<!-- musi być zdefiniowane lewe i prawy polozenie rozbiegu -->
     <profile id="inrun-left" side="left" maxstep="1000">
-        <start x="-10" y="1.0" refx="inrun" />
-        <line x="0" y="1.0" refx="dhill" />
+        <start x="-10" y="1.77" refx="inrun" />
+        <line x="0" y="1.77" refx="dhill" />
     </profile>
 
     <profile id="inrun-right" side="right" maxstep="1000">
-        <start x="-10" y="-1.0" refx="inrun" />
-        <line x="0" y="-1.0" refx="dhill" />
+        <start x="-10" y="-1.77" refx="inrun" />
+        <line x="0" y="-1.77" refx="dhill" />
     </profile>
 <!--XXXXXXXXXXXXXXXX[ railing pod torami najazdowymi ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<railing t="Textures\concrete1.png" x1="-5.1" y="-0.25" c="0xCA8686 " m="Materials\material1.xml" h="0.18" refx1="inrun" refx2="dhill" w="4.7"/>
@@ -153,8 +156,8 @@
 	<beam x="+92" z1="+11.36" z2="+11.36" y1="0" y2="-12.1" refx="inrun" refy="inrun-top" z="0" y="4" r="4.0" edges="180" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
 	<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->	
 <!--XXXXXXXXXXXXXXXX[ wieża dla sędziów ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-	<beam x="+162" z1="+28.36" z2="+24.36" y1="-24" y2="-120.1" refx="inrun" refy="inrun-top" z="0" y="4" r="3.0" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
-	<beam x="+162" z1="+28.36" z2="+24.36" y1="-25" y2="-120.1" refx="inrun" refy="inrun-top" z="0" y="4" r="3.2" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
+	<beam x="+82" z1="+28.36" z2="+24.36" y1="-24" y2="-120.1" refx="dhill" refy="inrun-top" z="0" y="4" r="3.0" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" />
+	<beam x="+82" z1="+28.36" z2="+24.36" y1="-25" y2="-120.1" refx="dhill" refy="inrun-top" z="0" y="4" r="3.2" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xCA8686" end1="true" end2="true" />
 		<!-- <beam z1="-10" z2="-9.9" y1="0" y2="0.1" refx="inrun" refy="inrun-top" z="0" y="4" r="15.0" edges="4" t="Textures\window.png" m="Materials\metal.xml" c="0xF2FFFE" end1="true" end2="true" /> -->	
 <!--XXXXXXXXXXXXXXXX[ teren ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     <terrain>
@@ -165,7 +168,7 @@
         <audience count="500" d="20" x0="0" seed="413" />
     </terrain>
 <!--XXXXXXXXXXXXXXXX[ schody ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-	<stairs refx="inrun" refz="inrun-right" c2="0xF2FFFE" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xF2FFFE" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="-1" x2="96" lz="3.2"  rz="2"/>
-	<stairs refx="inrun" refz="inrun-left"  c2="0xF2FFFE" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xF2FFFE" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="-1" x2="96" lz="-2" rz="-3.2"/>
+	<stairs refx="inrun" refz="inrun-right" c2="0xF2FFFE" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xF2FFFE" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="-0.5" x2="30" lz="3.7"  rz="2.5"/>
+	<stairs refx="inrun" refz="inrun-left"  c2="0xF2FFFE" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xF2FFFE" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="-0.5" x2="30" lz="-2.5" rz="-3.7"/>
 <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 </hill>
