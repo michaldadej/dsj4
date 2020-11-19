@@ -4,7 +4,7 @@
     <inrun>
         <profile e="93.9" es="24.92" t="7" gamma="35" alpha="11" r1="107" s="3" b1="2.5" z0="0.0" l="6.5" f="3.0" />
         <!-- choinki na najeździe i nszerokość --><guardrail z1="-0.4" z2="0.4" x="38" />
-        <startgate default="6" max="33" step="0.7" wind="1.5" z1="-2.0" z2="2.0" pz1="-0.9" pz2="0.9" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
+        <startgate default="6" max="16" step="0.7" wind="1.5" z1="-2.0" z2="2.0" pz1="-0.5" pz2="0.5" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
         <startbanner z="0" text="JADOWNIKI" textsize="0.1" />
         <frame bh="0.1" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
         <flag x="0.0" z="1.72" hf="1.1" pf="1.5" hp="11.5" rb="0.03" rt="0.03" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
@@ -46,8 +46,18 @@
 <!--XXXXXXXXXXXXXXXX[ szklane barierki ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 		<!--XXXXXXXXXXXXXXXX[ szklane barierki z PRAWEJ STRONY SKOCZNI JAK SKOCZEK JEDZIE ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-98" h="3" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-	<railing refx1="dhill" refx2="dhill" type="glass" x1="-94.3" x2="-63.2" h="3" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-		
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-94.3" x2="-65.22" h="3" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-64.30" x2="-60.30" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-60.28" x2="-56.28" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-56.26" x2="-52.26" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-52.24" x2="-48.24" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-48.22" x2="-44.22" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-44.20" x2="-40.20" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-40.18" x2="-36.18" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-36.16" x2="-32.16" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-32.14" x2="-28.14" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-28.12" x2="-24.12" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>	
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-28.12" x2="-24.12" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-24.10" x2="-20.10" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-20.08" x2="-16.08" h="0.4" w="0.05" z1="-2.18" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
@@ -61,8 +71,17 @@
 	<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-100.02" x2="-100.02" h="3" w="0.05" z1="-2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-98.01" x2="-98.01" h="3" w="0.05" z1="-13" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-94.31" x2="-94.31" h="3" w="0.05" z1="-13" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-63.2" h="3" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-65.22" h="3" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 		
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-64.30" x2="-60.30" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-60.28" x2="-56.28" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-56.26" x2="-52.26" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-52.24" x2="-48.24" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-48.22" x2="-44.22" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-44.20" x2="-40.20" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-40.18" x2="-36.18" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-36.16" x2="-32.16" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="dhill" refx2="dhill" type="glass" x1="-32.14" x2="-28.14" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-28.12" x2="-24.12" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-24.10" x2="-20.10" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	<railing refx1="dhill" refx2="dhill" type="glass" x1="-20.08" x2="-16.08" h="0.4" w="0.05" z1="+2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
@@ -73,6 +92,18 @@
 
 	
 	
+<!--słupki do pleksy bocznej rozbiegu -->
+		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+		last="true" end1="true" rect="true"
+		x1="2.97" x2="30.0" step="3.92" stepper="3" fitstep="true"
+		dy1="3.03" dy2="-0.3" dz="-2.17"
+		r1="0.01" r2="0.02" edges="30" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x9faaad"/>	
+
+		<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+		last="true" end1="true" rect="true"
+		x1="-4.8" x2="30.0" step="3.92" stepper="3" fitstep="true"
+		dy1="3.03" dy2="-0.3" dz="2.17"
+		r1="0.01" r2="0.02" edges="30" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x9faaad"/>
 	
 	<!-- musi być zdefiniowane lewe i prawy polozenie rozbiegu -->
     <profile id="inrun-left" side="left" maxstep="1000">
@@ -86,6 +117,8 @@
         <line x="+18.2" y="-2.0" refx="dhill" />
     </profile>
 <!--XXXXXXXXXXXXXXXX[ podwała najazdu railing pod torami najazdowymi ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<railing t="Textures\concrete1.png" x1="-5.1" x2="-73.02" y="+3.15" c="0xCA8686 " m="Materials\material1.xml" h="0.03" refx1="inrun" refx2="dhill" w="4.1"/> <!-- dach najazdu-->
+	<railing t="Textures\concrete1.png" x1="-5.2" x2="-72.92" y="+3.05" c="0xF2FFFE " m="Materials\material1.xml" h="0.03" refx1="inrun" refx2="dhill" w="4.3"/> <!-- dach najazdu-->
 	<railing t="Textures\concrete1.png" x1="-2.6" x2="-94.3" y="-0.24" z1="-5" z2="-5" c="0xCA8686 " m="Materials\material1.xml" h="0.1" refx1="inrun" refx2="dhill" w="14.9"/> <!-- railing pod wyjściem z góry najazdu-->
 	<railing t="Textures\concrete1.png" x1="-2.6" x2="-94.3" y="-0.749" z1="-5" z2="-5" c="0xF2FFFE " m="Materials\material1.xml" h="0.5" refx1="inrun" refx2="dhill" w="15.1"/> <!-- niższy railing pod wyjściem z góry najazdu-->
 	<railing t="Textures\concrete1.png" x1="-5.1" x2="-0.02" y="-0.25" c="0xCA8686 " m="Materials\material1.xml" h="0.18" refx1="inrun" refx2="dhill" w="4.7"/>
