@@ -1,0 +1,2 @@
+ <pillar refx1="inrun" t="Textures\concrete4.png" m="Materials\concrete.xml" c="0xB5B5B5" bt="0" ty="36.5" x1="10.5" x2="14" bly2="31" bry2="31" bly1="0" bry1="0" tly2="36.5" try2="36.5" try1="36.5" tly1="36.5" blz2="3.3" brz2="-3.3" blz1="3" brz1="-3" tlz2="3" trz2="-3" tlz1="2" trz1="-2" />
+    <pillar refx1="inrun" t="Textures\concrete4.png" m="Materials\concrete.xml" c="0xB5B5B5" bt="0" ty="36.5" x1="8" x2="10.5" bly2="0" bry2="0" bly1="0" bry1="0" tly2="36.5" try2="36.5" try1="0" tly1="0" blz2="3" brz2="-3" blz1="2" brz1="-2" tlz2="2" trz2="-2" tlz1="2" trz1="-2" />
