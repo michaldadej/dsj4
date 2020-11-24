@@ -90,7 +90,7 @@
         <measurers c1="0x578ad1" c2="0xeeeeee" />
         <label summer-d="20" winter-d="20" text="POWIAT BRZESKI|MAŁOPOLSKA" textsize="1.5" />
         <plastic c="0x585358" />
-        <lines summer-min="60" summer-max="145" winter-min="70" winter-max="145" />
+        <lines summer-min="60" summer-max="150" winter-min="70" winter-max="150" />
         <numbers min="50" max="136" />
     </dhill>
 	
