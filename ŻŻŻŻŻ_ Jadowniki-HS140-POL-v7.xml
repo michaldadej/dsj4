@@ -90,7 +90,7 @@
         <measurers c1="0x578ad1" c2="0xeeeeee" />
         <label summer-d="20" winter-d="20" text="POWIAT BRZESKI|MAŁOPOLSKA" textsize="1.5" />
         <plastic c="0x585358" />
-        <lines summer-min="60" summer-max="131" winter-min="70" winter-max="131" />
+        <lines summer-min="60" summer-max="145" winter-min="70" winter-max="145" />
         <numbers min="50" max="136" />
     </dhill>
 	
@@ -227,7 +227,7 @@
         <start x="-10" y="-1.77" refx="inrun" />
         <line x="+18.2" y="-2.0" refx="dhill" />
     </profile>
-	<!-- podwyższony dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.1" x2="-88.234" y="+3.572" c="0x443D45 " m="Materials\material1.xml" h="0.01" refx1="inrun" refx2="dhill" w="1.41"/><!-- dach najazdu-->
+	<!-- podwyższony dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.1" x2="-88.234" y="+3.599" c="0x443D45 " m="Materials\material1.xml" h="0.01" refx1="inrun" refx2="dhill" w="1.41"/><!-- dach najazdu-->
 	<!-- podwyższony dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.1" x2="-88.234" y="+3.52" c="0xFFFFFF " m="Materials\material1.xml" h="0.02" refx1="inrun" refx2="dhill" w="1.51"/><!-- dach najazdu-->
 	<!-- dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.1" z1="-1.2" z2="-1.2" x2="-77.02" y="+3.11" c="0x443D45 " m="Materials\material1.xml" h="0.01" refx1="inrun" refx2="dhill" w="1"/><!-- dach najazdu-->
 	<!-- dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.1" z1="+1.2" z2="+1.2" x2="-77.02" y="+3.11" c="0x443D45 " m="Materials\material1.xml" h="0.01" refx1="inrun" refx2="dhill" w="1"/><!-- dach najazdu-->
