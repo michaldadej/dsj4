@@ -16,7 +16,7 @@
 		f			+Float			Length of the flat section above inrun	-->
         <profile e="93.9" es="24.92" t="7" gamma="35" alpha="11" r1="107" s="3" b1="2.5" z0="0.0" l="6.5" f="3.0" />
         <!-- choinki na najeździe i nszerokość --><guardrail z1="-0.4" z2="0.4" x="38" />
-        <startgate default="15" max="50" step="0.50" wind="1.7" z1="-1.5" z2="1.5" pz1="-0.5" pz2="0.5" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
+        <startgate default="12" max="50" step="0.50" wind="1.7" z1="-1.5" z2="1.5" pz1="-0.5" pz2="0.5" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
         <startbanner z="0" text="JADOWNIKI|SKOCZNIA BOCHENIEC" textsize="0.1" />
         <gatenumbers z="+1.7" y="+0.05" size="0.185" c1="0xff452E3C" c2="0x59FFF000"/>
 		<frame bh="0.1" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
