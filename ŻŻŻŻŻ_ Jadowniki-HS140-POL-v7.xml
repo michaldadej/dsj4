@@ -297,7 +297,7 @@ rs	Float		Seed
 c[1, 2]	Color	0x4B4111, 0x6E7745	Colors
 tsc	Float	0.008	Tree fractal scale
 tsm	Float	0.4	Tree fractal smoothness	-->
-        <profile id="hill-terrain" in="+0.5" a0="5.0" l0="50.0" y0="+150.0" hd="10.5" dd="75.0" sd="30" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4" />
+        <profile id="hill-terrain" in="+0.5" a0="5.0" l0="50.0" y0="+150.0" hd="10.5" dd="75.0" sd="30" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x3d3116" c2="0x7b8047" tsc="0.022" tsm="0.4" />
         <trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.8" maxaltitude="1600" normalaltitude="1000" seed="142" />
         <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
         <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
@@ -310,4 +310,29 @@ tsm	Float	0.4	Tree fractal smoothness	-->
 	<stairs refx="inrun" refz="inrun-right" c2="0xFFFFFF" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xFFFFFF" m1="Materials\material1.xml" t1="Textures\rubbermat.png" y="+0.1" x1="-0.5" x2="30" lz="3.7"  rz="2.5"/>
 	<stairs refx="inrun" refz="inrun-left"  c2="0xFFFFFF" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xFFFFFF" m1="Materials\material1.xml" t1="Textures\rubbermat.png" y="+0.1" x1="-0.5" x2="30" lz="-2.5" rz="-3.7"/>
 <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+
+
+
+<!-- SCHODY ZESKOK -->
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-left" 
+		x1="0" x2="130" rz="0.1" lz="2" s="0.25" y="+0.1" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0xbebebe" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xd1ccc2"/>
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
+	x1="0" x2="130" rz="-2" lz="-0.1" s="0.25" y="+0.1" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0xbebebe" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xd1ccc2"/>
+<!-- boczna, lewa drewniana banda zeskoku  -->	
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"	x1="0"		x2="350"	lz="-0.6" rz="0" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"	x1="104.1"	y1="+100.3" y2="+100.5"	x2="121"	lz="-2" rz="-0.65" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\window.xml" c="0x10ed4a4a"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="104.1"	y1="+100.3" y2="+100.5"	x2="121"	lz="0.65" rz="2" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\window.xml" c="0x02ed4a4a"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="350"	lz="0.6" rz="0" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+
+
+
+
+
+
+
+
+
 </hill>
