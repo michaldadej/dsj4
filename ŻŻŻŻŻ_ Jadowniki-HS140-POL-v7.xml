@@ -27,13 +27,13 @@
 		l="6.5" 
 		f="3.0" 
 		/>
-        <!-- choinki na najeździe i szerokość --><guardrail z1="-0.4" z2="0.4" x="38" />
-        <startgate default="11" max="27" step="0.50" wind="1.7" z1="-1.7" z2="1.7" pz1="-1.1" pz2="1.1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
+        <!-- choinki na najeździe i szerokość --><guardrail z1="-0.4" z2="0.4" x="-338" />
+        <startgate default="11" max="53" step="0.50" wind="1.7" z1="-1.7" z2="1.7" pz1="-1.1" pz2="1.1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
         <startbanner z="0" text="JADOWNIKI|SKOCZNIA BOCHENIEC" textsize="0.1" />
         <gatenumbers z="+1.4" y="+0.011" size="0.165" c1="0xff452E3C" c2="0x59FFF000"/>
 		<frame bh="0.1" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
         <flag x="0.0" z="1.72" hf="1.1" pf="1.5" hp="11.5" rb="0.03" rt="0.03" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
-        <twigs lz="1.0" rz="-1.0" />
+        <twigs lz="1.0" rz="-1.0" x="-338" />
 		<track type="ceramic" snow="true"/>
     </inrun>
 	
@@ -161,20 +161,20 @@
 <!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-93.23" x2="-93.83" h="35.2" w="0.05" z1="-7.295" z2="-8.215" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 
 
-<!-- dodatkowe, lewe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 		x1="+0"			x2="+0.0"			lz="3.88" rz="2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, lewa drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 			x1="-5.5"		x2="-8.01"			lz="4.45" rz="4.05" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, lewa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, lewa górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, lewa górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-76.7"			lz="4.2" rz="2.6" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, lewa górny finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-86.7"			lz="3.4" rz="2.0" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawa banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 					x1="0.8"			x2="-8.01"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawa banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left" 					x1="-5.5"			x2="-2.4"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="0.8"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawa górna drewniana banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left"  x1="-5.5"			x2="-2.4"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawy górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-76.7"			lz="-2.6" rz="-4.2" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawy finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-86.7"			lz="-2.0" rz="-3.4" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- boczna, prawy górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<!-- dodatkowe, prawe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 		x1="+0"			x2="+0.0"			rz="-3.88" lz="-2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- dodatkowe, lewe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 		x1="+0"			x2="+0.0"			lz="3.88" rz="2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 			x1="-5.8"		x2="-8.01"			lz="4.45" rz="4.05" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-76.7"			lz="4.2" rz="2.6" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-86.7"			lz="3.4" rz="2.0" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 					x1="0.8"			x2="-8.01"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left" 					x1="-5.8"			x2="-2.4"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="0.8"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa górna drewniana banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left"  x1="-5.5"			x2="-2.4"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-76.7"			lz="-2.6" rz="-4.2" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-86.7"			lz="-2.0" rz="-3.4" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- dodatkowe, prawe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 		x1="+0"			x2="+0.0"			rz="-3.88" lz="-2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
 
 
 
@@ -203,14 +203,14 @@
 	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
 	last="true" end1="true" rect="true"
 	x1="2.97" x2="30.0" step="3.92" stepper="3" fitstep="true"
-	dy1="3.03" dy2="-0.3" dz="-2.19"
-	r1="0.01" r2="0.02" edges="30" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x443D45"/>	
+	dy1="3.03" dy2="-0.3" dz="-2.21"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
 
 	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
 	last="true" end1="true" rect="true"
 	x1="-4.8" x2="30.0" step="3.92" stepper="3" fitstep="true"
-	dy1="3.03" dy2="-0.3" dz="2.19"
-	r1="0.01" r2="0.02" edges="30" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x443D45"/>
+	dy1="3.03" dy2="-0.3" dz="2.21"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
 	<!-- koniec słupków do pleksy bocznej rozbiegu -->
 	
 	<profile id="inrun-left" side="left" maxstep="1000">
@@ -294,15 +294,14 @@ fd	Float	300.0	Fade distance
 sc	Float	0.1	Fractal scale
 sm	Float	0.5	Fractal smoothness
 rs	Float		Seed
-c[1, 2]	Color	0x4B4111, 0x6E7745	Colors
+c[1, 2]	Color	0x3b4111, 0x6E7745	Colors
 tsc	Float	0.008	Tree fractal scale
 tsm	Float	0.4	Tree fractal smoothness	-->
         <profile id="hill-terrain" in="+0.5" a0="5.0" l0="50.0" y0="+150.0" hd="10.5" dd="75.0" sd="30" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x3d3116" c2="0x7b8047" tsc="0.022" tsm="0.4" />
         <trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.8" maxaltitude="1600" normalaltitude="1000" seed="142" />
         <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
         <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
-
-        <audience count="110000" d="20" x0="-90" seed="413" />
+        <audience count="11000" d="20" x0="-20" seed="413" />
     </terrain>
 
 	
@@ -312,19 +311,19 @@ tsm	Float	0.4	Tree fractal smoothness	-->
 <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 
 
-
-
-
 <!-- SCHODY ZESKOK -->
-	<stairs refx="dhill" refy="dhill-top" refz="dhill-left" 
-		x1="0" x2="130" rz="0.1" lz="2" s="0.25" y="+0.1" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0xbebebe" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xd1ccc2"/>
+<!-- 
 	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
-	x1="0" x2="130" rz="-2" lz="-0.1" s="0.25" y="+0.1" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0xbebebe" t2="Textures\concrete1.png" m2="Materials\material1.xml" c2="0xd1ccc2"/>
+	x1="0" x2="145" rz="-3" lz="-0.1" s="1.65" y="+0.2" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/>	
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
+	x1="0" x2="145" rz="-3.5" lz="-2.7" s="1.65" y="+0.52" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/> -->
 <!-- boczna, lewa drewniana banda zeskoku  -->	
-<pillar refx="dhill" refy="dhill-top" refz="dhill-left"	x1="0"		x2="350"	lz="-0.6" rz="0" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
-<pillar refx="dhill" refy="dhill-top" refz="dhill-left"	x1="104.00"	y1="+100.15" y2="+100.5"	x2="120.95"	lz="-2" rz="-0.65" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\window.xml" c="0x10ed4a4a"/>
-<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="104.00"	y1="+100.0" y2="+100.5"	x2="120.95"	lz="0.65" rz="2" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\window.xml" c="0x02ed4a4a"/>
-<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="350"	lz="0.6" rz="0" zbias="1" scale="0.75" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="0"		x2="350"	lz="-0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="104.00"	y1="+100.15" y2="+100.5"	x2="120.95"	lz="-2" rz="-0.65" zbias="1" scale="0.75" t="Textures\wood7.png" m="Materials\snow.xml" c="0x10ed4a4a"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="91.3"	y1="+100.15" y2="+100.5"	x2="103.95"	lz="-1.5" rz="-0.65" zbias="1" scale="0.75" t="Textures\wood7.png" m="Materials\snow.xml" c="0x104894d2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="91.3"	y1="+100.15" y2="+100.5"	x2="103.95"	lz="0.65" rz="1.5" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\snow.xml" c="0x104894d2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="104.00"	y1="+100.0" y2="+100.5"	x2="120.95"	lz="0.65" rz="2" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\snow.xml" c="0x02ed4a4a"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="350"	lz="0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
 
 
 
