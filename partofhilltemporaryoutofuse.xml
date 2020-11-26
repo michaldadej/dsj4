@@ -6,3 +6,9 @@
 	<!-- dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.2" z1="+1.4" z2="+1.4"  x2="-76.92" y="+3.01" c="0xFFFFFF " m="Materials\material1.xml" h="0.03" refx1="inrun" refx2="dhill" w="1.2"/><!-- dach najazdu-->
 	<!-- dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.2" z1="-1.5" z2="-1.5"  x2="-76.92" y="+3.005" c="0xFFFFFF " m="Materials\material1.xml" h="0.0051" refx1="inrun" refx2="dhill" w="1.225"/><!-- dach najazdu-->
 	<!-- dach najazdu--><railing t="Textures\concrete1.png"  zbias="3" x1="-5.2" z1="+1.5" z2="+1.5"  x2="-76.92" y="+3.005" c="0xFFFFFF " m="Materials\material1.xml" h="0.0051" refx1="inrun" refx2="dhill" w="1.425"/><!-- dach najazdu-->
+
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="104.00"	y1="+100.15" y2="+100.5"	x2="120.95"	lz="-2" rz="-0.65" zbias="1" scale="0.75" t="Textures\wood7.png" m="Materials\snow.xml" c="0x10ed4a4a"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="91.3"	y1="+100.15" y2="+100.5"	x2="103.95"	lz="-1.5" rz="-0.65" zbias="1" scale="0.75" t="Textures\wood7.png" m="Materials\snow.xml" c="0x104894d2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="91.3"	y1="+100.15" y2="+100.5"	x2="103.95"	lz="0.65" rz="1.5" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\snow.xml" c="0x104894d2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="104.00"	y1="+100.0" y2="+100.5"	x2="120.95"	lz="0.65" rz="2" zbias="1" scale="0.75" t="Textures\railing-glass.png" m="Materials\snow.xml" c="0x02ed4a4a"/>

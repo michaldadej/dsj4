@@ -1,0 +1,386 @@
+<hill version="DSJ4-1.5.0">
+    <location latitude="49.842" longitude="24.0319" orientation="67" timezone="1" altitude="300"/>
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
+    <inrun>
+	<!-- 
+		e			+Float			Length of the inrun
+		es			+Float			Length of the inrun from the lowest to the highest start
+		t			+Float			Length of the table
+		gamma		+Float			Angle of the straight part of the inrun
+		alpha		+Float			Angle of the table
+		r1			+Float			Radius of the transition curve in the end of the transition curve
+		s			+Float			Height of the table
+		b1			+Float			Prepared width of the inrun
+		z0			+Float			Rails shift from the center of inrun
+		l			+Float	0.0		Length of the inrun in position relative to start gates
+		f			+Float			Length of the flat section above inrun	-->
+        <profile 
+		e="93.9" 
+		es="24.92" 
+		t="7" 
+		gamma="35" 
+		alpha="11" 
+		r1="107" 
+		s="3" 
+		b1="2.5" 
+		z0="0.0" 
+		l="6.5" 
+		f="3.0" 
+		/>
+        <!-- choinki na najeździe i szerokość --><guardrail z1="-0.4" z2="0.4" x="-338" />
+        <startgate default="11" max="53" step="0.50" wind="1.7" z1="-1.7" z2="1.7" pz1="-1.1" pz2="1.1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
+        <startbanner z="0" text="JADOWNIKI|SKOCZNIA BOCHENIEC" textsize="0.1" />
+        <gatenumbers z="+1.4" y="+0.011" size="0.165" c1="0xff452E3C" c2="0x59FFF000"/>
+		<frame bh="0.1" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
+        <flag x="0.0" z="1.72" hf="1.1" pf="1.5" hp="11.5" rb="0.03" rt="0.03" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
+        <twigs lz="1.0" rz="-1.0" x="-338" />
+		<track type="ceramic" snow="true"/>
+    </inrun>
+	
+	    <!-- inrun tower construction -->
+    <profile id="inrun-tower" refx="inrun" maxstep="1000">
+        <start x="0" y="-7.6" refy="inrun-top" />
+        <line x="20" y="-7.6" refy="inrun-top" refyx="0"/>
+    </profile>
+	
+	    
+    <pillar refx1="inrun" refx2="inrun" x1="+9.14" x2="+6.5" lz="-13.84" rz="-9.84" trefy="inrun-tower" brefy="inrun-tower" ty="1.3" by="1.2" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+     
+	
+    <dhill>
+<!--
+		alpha		+FLOAT				Inrun slope angle right after inrun
+		h			+FLOAT				Difference in height between the takeoff and K
+		n			+FLOAT				Horizontal distance between the takeoff and K
+		l1			+FLOAT				Length of the curve between the beginning of the landing area and construction point
+		l2			+FLOAT				Length of the curve between construction point and end of the landing area
+		a			+FLOAT				Length of the outrun after the end of the transition curve to the outrun
+		beta-p		+FLOAT				Angle of the tangent at beginning of the landing area
+		beta		+FLOAT				Angle of the tangent at construction point
+		beta-l		+FLOAT				Angle of the tangent at end of the landing area
+		rl			+FLOAT				Radius of the circular landing area
+		r2			+FLOAT				Radius of the transition curve from the end of the landing area to end of the transition curve to the outrun at end of the transition curve to the outrun
+		b0			+FLOAT				Width of the knoll at the base of the takeoff
+		bk			+FLOAT				Width at construction point
+		ba			+FLOAT				Width at safety line
+		hr			+FLOAT				Backslope height
+		nr			+FLOAT				Backslope curve radius
+		ar			+FLOAT				The position of the start of backslope curve
+		k			+FLOAT				Construction point
+		hs			+FLOAT				Hill size point (0-1000)
+		x0			+FLOAT		OPT		Starting point of the frame and snow either plastic appearance
+-->
+        <profile 
+		alpha="11" 
+		h="59.9" 
+		n="103.38" 
+		l1="15,7" 
+		l2="20" 
+		a="73.8" 
+		beta-p="38" 
+		beta="35" 
+		beta-l="32.5"
+		rl="300"
+		r2="95"
+		b0="12"
+		bk="24"
+		ba="32"
+		hr="15.0"
+		nr="60"
+		ar="-10"
+		k="120"
+		hs="140" 
+		x0="-1" 
+		/>
+        <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" />
+		<!--XXXXXXXXXXXXXXXX[ judgetower ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+		<judgetower d="72.9" q="-27.4" h="+12.5" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x78554e" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+		<lights step="50" x0="-110" size="1.5" h="35" d="28" r="0.6" g="0.56" b="0.56" attn="0.0005" range="400" side="left" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+        <windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x443D45" />
+        <measurers c1="0x578ad1" c2="0xeeeeee" />
+        <label summer-d="20" winter-d="20" text="POWIAT BRZESKI|MAŁOPOLSKA" textsize="1.5" />
+        <plastic c="0x585358" />
+        <lines summer-min="60" summer-max="150" winter-min="70" winter-max="150" />
+        <numbers min="50" max="136" />
+    </dhill>
+	
+		
+	<!-- inrun high band lights -->
+	<!-- <lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="16" x2="32.91" step="1.85" l="1.45" h="0.65" d="0.025" r="0.3" g="0.29" b="0.28" attn="0.6" range="20"/> -->	
+
+<!-- oświetlenie lewych schodów wewnętrzne --><lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="0" x2="30" step="0.61" l="0.40" h="0.11" d="2.49" 	day="false"		r="0.78" g="0.73" b="0.70" attn="0.6" range="20"/>
+<!-- oświetlenie prawych schodów wewnętrzne --><lights refz="inrun-right" refy="inrun-top" refx="inrun" x1="0" x2="30" step="0.61" l="0.40" h="0.11" d="2.49" 	day="false"			r="0.78" g="0.73" b="0.70" attn="0.6" range="20"/>
+<!-- oświetlenie lewej strony najazdu --><lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="1" x2="93.88" step="1.61" l="1.10" h="1.13" d="4.065" 		day="false"			r="0.78" g="0.73" b="0.70" attn="2.6" range="30"/>
+<!-- oświetlenie lewej strony najazdu --><lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="1" x2="93.88" step="1.61" l="1.10" h="1.13" d="4.13" 		day="false"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie prawej strony najazdu --><lights refz="inrun-right" refy="inrun-top" refx="inrun" x1="1" x2="93.88" step="1.61" l="1.10" h="1.13" d="4.13" 	day="false"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie prawej strony najazdu --><lights refz="inrun-right" refy="inrun-top" refx="inrun" x1="1" x2="93.88" step="1.61" l="1.10" h="1.13" d="4.065" 	day="false"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie lewego railingu --><lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="2" x2="70" step="2.61" l="2.40" h="-5.99" d="3.16" 			   day="true"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie lewego railingu --><lights refz="inrun-left" refy="inrun-top" refx="inrun" x1="2" x2="70" step="2.61" l="2.40" h="-5.91" d="3.16" 			   day="true"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie prawego railingu --><lights refz="inrun-right" refy="inrun-top" refx="inrun" x1="2" x2="70" step="2.61" l="2.40" h="-5.99" d="3.16" 			day="true"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+<!-- oświetlenie prawego railingu --><lights refz="inrun-right" refy="inrun-top" refx="inrun" x1="2" x2="70" step="2.61" l="2.40" h="-5.91" d="3.16" 			day="true"			r="0.78" g="0.73" b="0.70" attn="2.6" range="90"/>
+	
+<!--XXXXXXXXXXXXXXXX[ szklane barierki ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<!--XXXXXXXXXXXXXXXX[ szklane barierki z PRAWEJ STRONY SKOCZNI JAK SKOCZEK JEDZIE ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	
+	
+<!--pleksa boczna najazdu prawa część 2--><railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-97.7" h="3" w="0.05" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna najazdu prawa część 1-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-94.3" x2="-65.22" h="3" w="0.05" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	
+<!--pleksa boczna prawa przy progu część 1-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-8.02"  x2="-4.02"  h="1.222" w="0.02" z1="-2.098" z2="-2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna prawa przy progu część 2-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-4"     x2="-0"     h="1.222" w="0.02" z1="-2.098" z2="-2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>	
+		
+		
+<!--pleksa tylna tunelu-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-97.7" x2="-94.30" h="3"   w="0.05" z1="-12.35" z2="-12.35" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+
+<!--SZKŁO WIEŻA BOCZNA NAD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="10.40" y2="10.40" x1="-93.83" x2="-94.22" h="11.40" w="0.05" z1="-8.205" z2="-9.705" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA NAD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="10.40" y2="10.40" x1="-94.22" x2="-94.48" h="11.40" w="0.05" z1="-9.705" z2="-11.085" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA POD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-12.7" y2="-12.7" x1="-93.83" x2="-94.22" h="19.48" w="0.05" z1="-8.205" z2="-9.705" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA POD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-12.7" y2="-12.7" x1="-94.22" x2="-94.48" h="19.48" w="0.05" z1="-9.705" z2="-11.085" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-94.48" x2="-94.35" h="35.2" w="0.05" z1="-11.085" z2="-12.485" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-94.35" x2="-94.05" h="35.2" w="0.05" z1="-12.485" z2="-13.885" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-94.05" x2="-93.25" h="35.2" w="0.05" z1="-13.885" z2="-15.285" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-93.25" x2="-92.35" h="35.2" w="0.05" z1="-15.285" z2="-16.485" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-92.35" x2="-91.23" h="35.2" w="0.05" z1="-16.485" z2="-17.385" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-91.23" x2="-89.93" h="35.2" w="0.05" z1="-17.385" z2="-18.125" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-89.93" x2="-88.33" h="35.2" w="0.05" z1="-18.125" z2="-18.485" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-88.33" x2="-86.73" h="35.2" w="0.05" z1="-18.485" z2="-18.585" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-86.73" x2="-85.23" h="35.2" w="0.05" z1="-18.585" z2="-18.285" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-85.23" x2="-83.63" h="35.2" w="0.05" z1="-18.285" z2="-17.585" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-83.63" x2="-82.193" h="35.2" w="0.05" z1="-17.585" z2="-16.4995" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-82.193" x2="-81.03" h="35.2" w="0.05" z1="-16.4995" z2="-14.995" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-81.03" x2="-80.53" h="35.2" w="0.05" z1="-14.995" z2="-13.85" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-80.53" x2="-80.23" h="35.2" w="0.05" z1="-13.85" z2="-12.40" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-80.23" x2="-80.23" h="35.2" w="0.05" z1="-12.45" z2="-10.80" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-80.23" x2="-80.73" h="35.2" w="0.05" z1="-10.80" z2="-9.15" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-80.73" x2="-81.53" h="35.2" w="0.05" z1="-9.15" z2="-7.5" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-81.53" x2="-83.13" h="35.2" w="0.05" z1="-7.5" z2="-5.85" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-83.13" x2="-84.93" h="35.2" w="0.05" z1="-5.85" z2="-4.89" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-84.93" x2="-86.73" h="35.2" w="0.05" z1="-4.89" z2="-4.59" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-86.73" x2="-88.53" h="35.2" w="0.05" z1="-4.59" z2="-4.51" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-88.53" x2="-90.33" h="35.2" w="0.05" z1="-4.51" z2="-5.11" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-90.33" x2="-92.13" h="35.2" w="0.05" z1="-5.11" z2="-6.25" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-92.13" x2="-93.23" h="35.2" w="0.05" z1="-6.25" z2="-7.295" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-93.23" x2="-93.83" h="35.2" w="0.05" z1="-7.295" z2="-8.215" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+
+
+<!-- dodatkowe, lewe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 		x1="+0"			x2="+0.0"			lz="3.88" rz="2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right" 			x1="-5.8"		x2="-8.01"			lz="4.45" rz="4.05" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa barierka najazdu  -->	<pillar refx1="dhill" refx2="dhill" refz="inrun-right" 			x1="-79.8"		x2="-8.01"			lz="4.1" rz="4.085" trefy="inrun-top" brefy="inrun-top" ty="1.225" by="1.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa barierka najazdu  -->	<pillar refx1="dhill" refx2="dhill" refz="inrun-right" 			x1="-79.8"		x2="-8.01"			lz="4.1" rz="4.085" trefy="inrun-top" brefy="inrun-top" ty="0.985" by="0.835" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+<!-- boczna, prawa barierka najazdu  -->	<pillar refx1="dhill" refx2="dhill" refz="inrun-left" 			x1="-79.8"		x2="-8.01"			lz="-4.1" rz="-4.085" trefy="inrun-top" brefy="inrun-top" ty="1.225" by="1.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa barierka najazdu  -->	<pillar refx1="dhill" refx2="dhill" refz="inrun-left" 			x1="-79.8"		x2="-8.01"			lz="-4.1" rz="-4.085" trefy="inrun-top" brefy="inrun-top" ty="0.985" by="0.835" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+
+
+<!-- słupki na których zamontowana są lewe barierki najazdu  -->
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="30" x2="85.0" step="3.92" stepper="3" fitstep="true"
+	dy1="1.33" dy2="-0.3" dz="2.10"
+	r1="0.083" r2="0.083" edges="400" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+	
+	<!-- słupki na których zamontowana są prawe barierki najazdu  -->
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="30" x2="85.0" step="3.92" stepper="3" fitstep="true"
+	dy1="1.33" dy2="-0.3" dz="-2.10"
+	r1="0.083" r2="0.083" edges="400" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+
+
+<!-- boczna, lewa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-65"			lz="4.35" rz="4.10" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-76.7"			lz="4.2" rz="2.6" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, lewa górny finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-right"  x1="-5.5"		x2="-86.7"			lz="3.4" rz="2.0" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 					x1="0.8"			x2="-8.01"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left" 					x1="-5.8"			x2="-2.4"			lz="-4.05" rz="-4.45" trefy="inrun-top" brefy="inrun-top" ty="0.545" by="-0.075" zbias="1" scale="0.75" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa górna drewniana banda najazdu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="0.8"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawa górna drewniana banda najazdu cz.2  -->	<pillar refx1="inrun" refx2="inrun" refz="inrun-left"  x1="-5.5"			x2="-2.4"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="1.245" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy górny drewniany dach/sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-76.7"			lz="-2.6" rz="-4.2" trefy="inrun-top" brefy="inrun-top" ty="3.5" by="3.3" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy finalny sufit  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-86.7"			lz="-2.0" rz="-3.4" trefy="inrun-top" brefy="inrun-top" ty="5.2" by="4.9" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- boczna, prawy górny drewniany bok sufitu  -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left"  x1="-5.5"			x2="-65"			lz="-4.10" rz="-4.35" trefy="inrun-top" brefy="inrun-top" ty="3.3" by="2.95" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<!-- dodatkowe, prawe, płaskie pokrycie najazdu -->	<pillar refx1="inrun" refx2="dhill" refz="inrun-left" 		x1="+0"			x2="+0.0"			rz="-3.88" lz="-2.31" trefy="inrun-top" brefy="inrun-top" ty="0.045" by="-0.075" zbias="1" scale="0.75" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+
+
+<!--SZKŁO W osi X SZKŁO dolne piętro najazd tylna pleksa-->			<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-100.02" x2="-100.02" h="3" w="0.05" z1="-2.18" z2="+2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO W osi X SZKŁO górne piętro najazd przód podwyższenia dachu-->                          			<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" y1="+3.4"   y2="+3.4" x1="-88.24" x2="-88.24" h="1.62" w="0.02" z1="-0.7" z2="+0.7" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO W osi X SZKŁO górne piętro tylna pleksa podwyższenie dachu--><railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" y1="+2.99"   y2="+2.99" x1="-100.04" x2="-100.04" h="2.02" w="0.02" z1="-0.7" z2="+0.7" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+		
+<!--pleksa boczna tunelu-->	<railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-97.74" x2="-97.74" 				h="3" w="0.05" z1="-12.5" z2="-2.18" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna tunelu--><railing refx1="dhill" refx2="dhill" refz1="dhill" refz2="dhill" type="glass" x1="-94.26" x2="-94.26" 				h="3" w="0.05" z1="-8.45" z2="-2.110" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+
+<!--SZKŁO górne piętro najazd--><railing refx1="dhill" refx2="dhill" type="glass" y="+3.4"  x1="-100" x2="-88.22" 								h="1.6" w="0.02" z1="+0.71" z2="+0.71" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO górne piętro najazd--><railing refx1="dhill" refx2="dhill" type="glass" y="+3.4" x1="-100" x2="-88.22" 									h="1.6" w="0.05" z1="-0.71" z2="-0.71" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	
+	
+<!--pleksa boczna najazdu lewa-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-65.22" 																	h="3" w="0.05" z1="+2.20" z2="+2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+		
+<!--pleksa boczna lewa przy progu-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-8.02" x2="-4.02" h="1.222" w="0.02" z1="+2.098" z2="+2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna lewa przy progu-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-4" x2="-0" h="1.222" w="0.02" z1="+2.098" z2="+2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>	
+
+	
+	
+
+	
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX NAJAZD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--słupki do pleksy bocznej rozbiegu prawy i lewy -->
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="2.97" x2="30.0" step="3.92" stepper="3" fitstep="true"
+	dy1="3.03" dy2="-0.3" dz="-2.21"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="-4.8" x2="30.0" step="3.92" stepper="3" fitstep="true"
+	dy1="3.03" dy2="-0.3" dz="2.21"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+
+	<!--słupki do górnej pleksy bocznej rozbiegu -->
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="-4.8" x2="6.98" step="3.92" stepper="3" fitstep="true"
+	dy1="5.03" dy2="3.33" dz="-0.71"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+	
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="-4.8" x2="6.98" step="3.92" stepper="3" fitstep="true"
+	dy1="5.03" dy2="3.33" dz="+0.71"
+	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+
+
+	<!-- koniec słupków do pleksy bocznej rozbiegu -->
+	
+	<profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-10" y="2.0" refx="inrun" />
+        <line x="+18.2" y="2.0" refx="dhill" />
+    </profile>
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-10" y="-2.0" refx="inrun" />
+        <line x="+18.2" y="-2.0" refx="dhill" />
+    </profile>
+
+	<!--XXXXXXXXXXXXXXXX[ podwała najazdu railing pod torami najazdowymi ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<railing t="Textures\concrete1.png" x1="-2.6" x2="-94.3" y="-0.24" z1="-5" z2="-5" c="0x443D45 " m="Materials\material1.xml" h="0.1" refx1="inrun" refx2="dhill" w="14.9"/> <!-- railing pod wyjściem z góry najazdu-->
+	<railing t="Textures\concrete1.png" x1="-2.6" x2="-94.3" y="-0.749" z1="-5" z2="-5" c="0xFFFFFF " m="Materials\material1.xml" h="0.5" refx1="inrun" refx2="dhill" w="15.1"/> <!-- niższy railing pod wyjściem z góry najazdu-->
+	<railing t="Textures\concrete1.png" x1="-5.1" x2="-0.02" y="-0.25" c="0x443D45 " m="Materials\material1.xml" h="0.18" refx1="inrun" refx2="dhill" w="4.7"/>
+	<railing t="Textures\concrete1.png" x1="-5" x2="+0.04" y="-0.42" c="0xFFFFFF " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="5"/>
+	<railing t="Textures\concrete1.png" x1="-5" x2="+0.04" y="-0.62" c="0xFFFFFF " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="5.3"/>
+	<railing t="Textures\concrete1.png" x1="-5" x2="+0.04" y="-0.82" c="0xFFFFFF " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="5.6"/>
+	<railing t="Textures\concrete1.png" x1="-5" x2="+0.04" y="-1.02" c="0xFFFFFF  " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="5.9"/>
+	<railing t="Textures\concrete1.png" y="-1.22" x2="-0.69" c="0xFFFFFF  " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="2"/>
+	<railing t="Textures\concrete1.png" y="-1.42" x2="-0.71" c="0xFFFFFF  " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="2"/>
+	<railing t="Textures\concrete1.png" y="-1.62" x2="-0.73" c="0xFFFFFF  " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="2"/>
+	<railing t="Textures\concrete1.png" y="-1.82" x2="-0.75" c="0xFFFFFF  " m="Materials\material1.xml" h="0.2" refx1="inrun" refx2="dhill" w="2"/>	
+	<railing t="Textures\concrete1.png" x1="-2" x2="0.05" y="-8.62" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="3.1" refx1="inrun" refx2="dhill" w="2.3"/>
+	<railing t="Textures\concrete1.png" y="-9.82" c="0xFFFFFF " m="Materials\material1.xml" h="9.6" refx1="inrun" refx2="dhill" w="1.8"/>
+	<railing t="Textures\concrete1.png" x1="12.5" x2="-1" y="-2.62" c="0xFFFFFF  " m="Materials\material1.xml" h="1" refx1="inrun" refx2="dhill" w="1.8"/>
+	
+	
+	<!-- schody przy progu -->
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="93.5" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="4.5" refx1="inrun" refx2="dhill" w="8.2"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="92" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="4.0" refx1="inrun" refx2="dhill" w="8"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="90.5" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="3.5" refx1="inrun" refx2="dhill" w="8"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="89" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="3.1" refx1="inrun" refx2="dhill" w="8"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="87.5" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="2.6" refx1="inrun" refx2="dhill" w="8"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="86" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="2.1" refx1="inrun" refx2="dhill" w="8"/>
+	<railing t="Textures\concrete1.png" x2="+0.1" x1="84.5" y="-5.22" c="0x443D45  " m="Materials\material1.xml" t="Textures\wood4b.png" h="1.6" refx1="inrun" refx2="dhill" w="8"/>
+
+
+
+
+
+<!-- wieża startowa boczna -->
+	<!-- wieża startowa boczna pokrywa górna --><beam x="+7.9" z1="-11.64" z2="-11.64" y1="18" y2="17.7" refx="inrun" refy="inrun-top" z="0" y="4" r="8.2" edges="400" t="Textures\concrete1.png" m="Materials\metal.xml" c="0x443D45" end1="true" end2="true" />
+
+	<!-- winda góra --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="18" y2="10" refx="inrun" refy="inrun-top" z="0" y="4" r="1.0" edges="800" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<!-- winda góra --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="10.8" y2="-80" refx="inrun" refy="inrun-top" z="0" y="4" r="1.6" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<!-- winda doł --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="-16.57" y2="-17.0" refx="inrun" refy="inrun-top" z="0" y="4" r="8.2" edges="800" t="Textures\concrete1.png" m="Materials\metal.xml" c="0x443D45" end1="true" end2="true" />
+	<!-- winda doł --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="-16.87" y2="-80" refx="inrun" refy="inrun-top" z="0" y="4" r="7.3" edges="800" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+<!-- 2 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="2.9" y2="3.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- 1 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-5.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- 0 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-12.9" y2="-11.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- wieża pod parterem -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-32.9" y2="-12" refx="inrun" refy="inrun-top" z="0" y="4" r="8.4" edges="400" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="8" y2="-3" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+
+
+<!-- łącznik wieży startowej i najazdu -->
+	<beam x="+7.03" z1="-11.6" z2="-11.6" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-9.7" z2="-9.7" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-8.7" z2="-8.7" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-6.7" z2="-6.7" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-5.8" z2="-5.8" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-3.8" z2="-3.8" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-2.9" z2="-2.9" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="-2" z2="-2" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+7.03" z1="+0" z2="+0" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+
+
+<!--XXXXXXXXXXXXXXXX[ wieża dla trenerów ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<!-- 	<beam x="+92" z1="+11.36" z2="+11.36" y1="5.3" y2="5.15" refx="inrun" refy="inrun-top" z="0" y="8.2" r="2.5" edges="240" t="Textures\concrete1.png" m="Materials\metal.xml" c="0x443D45" end1="true" end2="true" />
+	<beam x="+92" z1="+11.36" z2="+11.36" y1="5.1" y2="5" refx="inrun" refy="inrun-top" z="0" y="8.2" r="3.5" edges="240" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<beam x="+92" z1="+11.36" z2="+11.36" y1="5" y2="0.4" refx="inrun" refy="inrun-top" z="0" y="8" r="0.04" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<beam x="+92" z1="+11.36" z2="+11.36" y1="0.4" y2="0" refx="inrun" refy="inrun-top" z="0" y="4" r="3.5" edges="180" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<beam x="+92" z1="+11.36" z2="+11.36" y1="0" y2="-12.1" refx="inrun" refy="inrun-top" z="0" y="4" r="4.0" edges="180" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" /> -->
+
+
+<!--XXXXXXXXXXXXXXXX[ wieża dla sędziów ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<!-- 	<beam x="+82" z1="+28.36" z2="+24.36" y1="-24" y2="-120.1" refx="dhill" refy="inrun-top" z="0" y="4" r="3.0" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+	<beam x="+82" z1="+28.36" z2="+24.36" y1="-25" y2="-120.1" refx="dhill" refy="inrun-top" z="0" y="4" r="3.2" edges="590" t="Textures\concrete1.png" m="Materials\metal.xml" c="0x443D45" end1="true" end2="true" />
+ -->
+ 
+ 
+<!--XXXXXXXXXXXXXXXX[ teren ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <terrain>
+<!-- 
+in	Float		Inrun weight
+y0	Float		Horizon in terms of Y-axis
+sd	Float	10.0	Smooth distance
+fd	Float	300.0	Fade distance
+sc	Float	0.1	Fractal scale
+sm	Float	0.5	Fractal smoothness
+rs	Float		Seed
+c[1, 2]	Color	0x3b4111, 0x6E7745	Colors
+tsc	Float	0.008	Tree fractal scale
+tsm	Float	0.4	Tree fractal smoothness	-->
+        <profile id="hill-terrain" in="+0.5" a0="5.0" l0="50.0" y0="+150.0" hd="10.5" dd="75.0" sd="30" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x3d3116" c2="0x7b8047" tsc="0.022" tsm="0.4" />
+        <trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.8" maxaltitude="1600" normalaltitude="1000" seed="142" />
+        <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
+        <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
+        <audience count="11000" d="20" x0="-20" seed="413" />
+    </terrain>
+
+	
+<!--XXXXXXXXXXXXXXXX[ schody ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<stairs refx="inrun" refz="inrun-right" c2="0xFFFFFF" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xFFFFFF" m1="Materials\material1.xml" t1="Textures\rubbermat.png" y="+0.1" x1="-0.5" x2="30" lz="3.7"  rz="2.5"/>
+	<stairs refx="inrun" refz="inrun-left"  c2="0xFFFFFF" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xFFFFFF" m1="Materials\material1.xml" t1="Textures\rubbermat.png" y="+0.1" x1="-0.5" x2="30" lz="-2.5" rz="-3.7"/>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+<!-- SCHODY ZESKOK -->
+<!-- 
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
+	x1="0" x2="145" rz="-3" lz="-0.1" s="1.65" y="+0.2" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/>	
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
+	x1="0" x2="145" rz="-3.5" lz="-2.7" s="1.65" y="+0.52" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/> -->
+<!-- boczna, lewa drewniana banda zeskoku  -->	
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="0"		x2="140"	lz="-0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="140"	lz="0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+
+
+
+
+
+
+
+
+
+
+</hill>
