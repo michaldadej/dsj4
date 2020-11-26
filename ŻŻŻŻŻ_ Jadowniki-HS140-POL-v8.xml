@@ -125,8 +125,8 @@
 <!--XXXXXXXXXXXXXXXX[ szklane barierki z PRAWEJ STRONY SKOCZNI JAK SKOCZEK JEDZIE ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	
 	
-<!--pleksa boczna najazdu prawa część 2--><railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-97.7" h="3" w="0.05" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-<!--pleksa boczna najazdu prawa część 1-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-94.3" x2="-65.22" h="3" w="0.05" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna najazdu prawa część 2--><railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-97.7" h="3" w="0.02" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna najazdu prawa część 1-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-94.3" x2="-65.22" h="3" w="0.02" z1="-2.18" z2="-2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	
 <!--pleksa boczna prawa przy progu część 1-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-8.02"  x2="-4.02"  h="1.222" w="0.02" z1="-2.098" z2="-2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--pleksa boczna prawa przy progu część 2-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-4"     x2="-0"     h="1.222" w="0.02" z1="-2.098" z2="-2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>	
@@ -216,7 +216,7 @@
 <!--SZKŁO górne piętro najazd--><railing refx1="dhill" refx2="dhill" type="glass" y="+3.4" x1="-100" x2="-88.22" 									h="1.6" w="0.05" z1="-0.71" z2="-0.71" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 	
 	
-<!--pleksa boczna najazdu lewa-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-65.22" 																	h="3" w="0.05" z1="+2.20" z2="+2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--pleksa boczna najazdu lewa-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-100" x2="-65.22" 																	h="3" w="0.02" z1="+2.20" z2="+2.20" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 		
 <!--pleksa boczna lewa przy progu-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-8.02" x2="-4.02" h="1.222" w="0.02" z1="+2.098" z2="+2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--pleksa boczna lewa przy progu-->	<railing refx1="dhill" refx2="dhill" type="glass" x1="-4" x2="-0" h="1.222" w="0.02" z1="+2.098" z2="+2.098" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>	
@@ -230,14 +230,26 @@
 	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
 	last="true" end1="true" rect="true"
 	x1="2.97" x2="30.0" step="3.92" stepper="3" fitstep="true"
-	dy1="3.03" dy2="-0.3" dz="-2.21"
-	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+	dy1="3.03" dy2="-0.3" dz="-2.24"
+	r1="0.082" r2="0.082" edges="4" smooth="true" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>		
+	
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="2.97" x2="30.0" step="3.92" stepper="3" fitstep="true"
+	dy1="3.03" dy2="-0.3" dz="-2.18"
+	r1="0.082" r2="0.072" edges="4" smooth="true" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
 
 	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
 	last="true" end1="true" rect="true"
 	x1="-4.8" x2="30.0" step="3.92" stepper="3" fitstep="true"
-	dy1="3.03" dy2="-0.3" dz="2.21"
-	r1="0.07" r2="0.07" edges="4" smooth="false" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
+	dy1="3.03" dy2="-0.3" dz="2.24"
+	r1="0.082" r2="0.082" edges="4" smooth="true" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>		
+	
+	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
+	last="true" end1="true" rect="true"
+	x1="-4.8" x2="30.0" step="3.92" stepper="3" fitstep="true"
+	dy1="3.03" dy2="-0.3" dz="2.18"
+	r1="0.082" r2="0.072" edges="4" smooth="true" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45"/>	
 
 	<!--słupki do górnej pleksy bocznej rozbiegu -->
 	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top"
