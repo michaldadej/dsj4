@@ -301,6 +301,7 @@
 	<!-- winda góra --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="10.8" y2="-80" refx="inrun" refy="inrun-top" z="0" y="4" r="1.6" edges="4" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
 	<!-- winda doł --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="-16.57" y2="-17.0" refx="inrun" refy="inrun-top" z="0" y="4" r="8.2" edges="800" t="Textures\concrete1.png" m="Materials\metal.xml" c="0x443D45" end1="true" end2="true" />
 	<!-- winda doł --><beam zbias="1" x="+7.9" z1="-11.64" z2="-11.64" y1="-16.87" y2="-80" refx="inrun" refy="inrun-top" z="0" y="4" r="7.3" edges="800" t="Textures\concrete1.png" m="Materials\metal.xml" c="0xFFFFFF" end1="true" end2="true" />
+<!-- 3 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="10.5" y2="11.6" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 2 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="2.9" y2="3.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 1 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-5.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 0 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-12.9" y2="-11.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
@@ -369,10 +370,14 @@ tsm	Float	0.4	Tree fractal smoothness	-->
 	x1="0" x2="145" rz="-3" lz="-0.1" s="1.65" y="+0.2" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/>	
 	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" 
 	x1="0" x2="145" rz="-3.5" lz="-2.7" s="1.65" y="+0.52" h="-0.05" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0x443D45" t2="Textures\wood3b.png" m2="Materials\material1.xml" c2="0x443D45"/> -->
-<!-- boczna, lewa drewniana banda zeskoku  -->	
+	
+	
+<!-- płaskie broku zeskoku  -->	
 <pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="0"		x2="140"	lz="-0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left"		x1="0"		x2="92"	lz="-1.2" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
 
 <pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="140"	lz="0.6" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right"	x1="0"		x2="92"	lz="1.2" rz="0" zbias="1" scale="3.1" t="Textures\wood3b.png" m="Materials\material1.xml" c="0x443D45"/>
 
 
 
