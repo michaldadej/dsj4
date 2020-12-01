@@ -133,8 +133,10 @@
 
 <!--SZKŁO WIEŻA BOCZNA NAD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="10.40" y2="10.40" x1="-93.83" x2="-94.22" h="4.40" w="0.05" z1="-8.205" z2="-9.705" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--SZKŁO WIEŻA BOCZNA NAD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="10.40" y2="10.40" x1="-94.22" x2="-94.48" h="4.40" w="0.05" z1="-9.705" z2="-11.085" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-<!--SZKŁO WINDA -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-14,6" y2="-14,6" x1="-88.42" x2="-88.48" h="29.40" w="0.05" z1="-10.605" z2="-12.985" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
-<!--SZKŁO WINDA -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-14,6" y2="-14,6" x1="-85.42" x2="-85.48" h="29.40" w="0.05" z1="-10.605" z2="-12.985" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WINDA TYŁ-->					<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-44,6" y2="-44,6" x1="-88.42" x2="-88.42" h="59.40" w="0.05" z1="-10.605" z2="-12.985" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WINDA BOK DALSZY -->			<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-44,6" y2="-44,6" x1="-86.02" x2="-88.42" h="59.40" w="0.05" z1="-12.985" z2="-12.985" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WINDA BOK BLIŻSZY -->			<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-44,6" y2="-44,6" x1="-86.02" x2="-88.42" h="59.40" w="0.05" z1="-10.605" z2="-10.605" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<!--SZKŁO WINDA PRZÓD-->				<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-44,6" y2="-44,6" x1="-86.02" x2="-86.02" h="59.40" w="0.05" z1="-10.605" z2="-12.985" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--SZKŁO WIEŻA BOCZNA POD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-12.7" y2="-12.7" x1="-93.83" x2="-94.22" h="19.48" w="0.05" z1="-8.205" z2="-9.705" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--SZKŁO WIEŻA BOCZNA POD WYJŚCIEM -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-12.7" y2="-12.7" x1="-94.22" x2="-94.48" h="19.48" w="0.05" z1="-9.705" z2="-11.085" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
 <!--SZKŁO WIEŻA BOCZNA WOKÓŁ -->	<railing refy1="inrun-tower" trefy="inrun-tower" brefy="inrun-tower" refy2="inrun-tower" refx1="dhill" refx2="dhill" type="glass" y1="-13.4" y2="-13.4" x1="-94.48" x2="-94.35" h="28.21" w="0.05" z1="-11.085" z2="-12.485" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
@@ -305,6 +307,13 @@
 <!-- 3 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="10.5" y2="11.6" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 2 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="2.9" y2="3.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 1 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-5.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy nad 1 piętrem -->	<beam x="+7.9" z1="-11.34" z2="-11.34" y1="-0.2" y2="11.5" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy nad 1 piętrem -->	<beam x="+7.9" z1="-11.84" z2="-11.84" y1="-0.2" y2="11.5" refx="inrun" refy="inrun-top" z="0" y="4" r="0.10" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- łącznik lin windy ponad -->	<beam x="+7.9" z1="-11.84" z2="-11.84" y1="-0.2" y2="0.5" refx="inrun" refy="inrun-top" z="0" y="4" r="0.66" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy nad 1 piętrem -->	<beam x="+7.9" z1="-12.34" z2="-12.34" y1="-0.2" y2="11.5" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy pod 1 piętrem -->	<beam x="+7.9" z1="-11.34" z2="-11.34" y1="-49.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy pod 1 piętrem -->	<beam x="+7.9" z1="-11.84" z2="-11.84" y1="-49.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="0.10" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
+<!-- lina windy pod 1 piętrem -->	<beam x="+7.9" z1="-12.34" z2="-12.34" y1="-49.1" y2="-4.0" refx="inrun" refy="inrun-top" z="0" y="4" r="0.06" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- 0 pietro podłoga -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-12.9" y2="-11.8" refx="inrun" refy="inrun-top" z="0" y="4" r="8.7" edges="400" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- wieża pod parterem szeroka -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-17.8" y2="-12" refx="inrun" refy="inrun-top" z="0" y="4" r="8.4" edges="400" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 <!-- wieża u stóp szeroka -->	<beam x="+7.9" z1="-11.64" z2="-11.64" y1="-32.8" y2="-50" refx="inrun" refy="inrun-top" z="0" y="4" r="8.4" edges="400" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
@@ -312,17 +321,6 @@
 <!-- wieża pomocna pod parterem prawy -->	<beam x="+7.9" z1="-5.64" z2="-5.64" y1="-80.9" y2="-12" refx="inrun" refy="inrun-tower" z="0" y="4" r="2" edges="400" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 
 
-
-<!-- łącznik wieży startowej i najazdu -->
-	<beam x="+7.03" z1="-11.6" z2="-11.6" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-9.7" z2="-9.7" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-8.7" z2="-8.7" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-6.7" z2="-6.7" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-5.8" z2="-5.8" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-3.8" z2="-3.8" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-2.9" z2="-2.9" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="-2" z2="-2" y1="-6.2" y2="-7.5" refx="inrun" refy="inrun-top" z="0" y="4" r="1.7" edges="4" t="Textures\wood4b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
-	<beam x="+7.03" z1="+0" z2="+0" y1="-6" y2="-7.7" refx="inrun" refy="inrun-top" z="0" y="4" r="1.9" edges="4" t="Textures\wood2b.png" m="Materials\material1.xml" c="0x443D45" end1="true" end2="true" />
 
 
 <!--XXXXXXXXXXXXXXXX[ wieża dla trenerów ]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
@@ -392,19 +390,19 @@ tsm	Float	0.4	Tree fractal smoothness	-->
         top="false" bottom="false" right="false" front="false" left="false"/>
         
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.58" lz="-12.46" ty="10.79" by="7.3"
+        x1="9.02" x2="9.86" rz="-12.58" lz="-12.46" ty="10.79" by="7.3"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.42" x2="9.86" rz="-11.14" lz="-11.02" ty="10.79" by="7.3"
+        x1="9.02" x2="9.86" rz="-11.14" lz="-11.02" ty="10.79" by="7.3"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>    
 	<pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
         x1="9.7" x2="9.86" rz="-11.84" lz="-11.82" ty="10.79" by="7.3"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.56" lz="-11.14" ty="8.12" by="7.3"
+        x1="9.42" x2="9.86" rz="-12.56" lz="-11.14" ty="8.12" by="7.3"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.56" lz="-11.14" ty="10.79" by="9.98"
+        x1="9.42" x2="9.86" rz="-12.56" lz="-11.14" ty="10.79" by="9.98"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
 
 
@@ -415,19 +413,44 @@ tsm	Float	0.4	Tree fractal smoothness	-->
         top="false" bottom="false" right="false" front="false" left="false"/>    
         
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.58" lz="-12.46" ty="2.99" by="-0.5"
+        x1="9.02" x2="9.86" rz="-12.58" lz="-12.46" ty="2.99" by="-0.5"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.42" x2="9.86"  rz="-11.14" lz="-11.02" ty="2.99" by="-0.5"
+        x1="9.02" x2="9.86"  rz="-11.14" lz="-11.02" ty="2.99" by="-0.5"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>    
 	<pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
          x1="9.7" x2="9.86" rz="-11.84" lz="-11.82" ty="2.99" by="-0.5"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.56" lz="-11.14" ty="0.32" by="-0.5"
+        x1="9.42" x2="9.86" rz="-12.56" lz="-11.14" ty="0.32" by="-0.5"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
     <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
-        x1="7.82" x2="9.86" rz="-12.56" lz="-11.14" ty="2.99" by="2.18"
+        x1="9.42" x2="9.86" rz="-12.56" lz="-11.14" ty="2.99" by="2.18"
+        t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
+
+
+    <!-- zatrzymana winda 1. piętro -->
+    <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="8.78" x2="8.84" lz="-12.54" rz="-11.06" ty="3.96" by="-0.4"
+        type="glass" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffc7f2e3" scale="0.2"
+        top="false" bottom="false" right="false" front="false" left="false"/>    
+		
+	<pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="7.04" x2="7.1" lz="-12.54" rz="-11.06" ty="3.96" by="-0.4"
+        type="glass" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffc7f2e3" scale="0.2"
+        top="false" bottom="false" right="false" front="false" left="false"/> 
+        
+    <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="7.02" x2="8.86" rz="-12.58" lz="-12.46" ty="3.99" by="-0.5"
+        t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
+    <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="7.02" x2="8.86"  rz="-11.14" lz="-11.02" ty="3.99" by="-0.5"
+        t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>    
+    <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="7.02" x2="8.86" rz="-12.56" lz="-11.14" ty="0.32" by="-0.5"
+        t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
+    <pillar zbias="1"trefy="inrun-tower" brefy="inrun-tower"
+        x1="7.02" x2="8.86" rz="-12.56" lz="-11.14" ty="3.99" by="2.78"
         t="Textures\metal.png" m="Materials\metal.xml" c="0xFFFFFF"/>
 
 	<profile id="inrun-terrain">
