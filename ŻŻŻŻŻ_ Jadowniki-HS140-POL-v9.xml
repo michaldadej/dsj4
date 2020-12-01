@@ -28,13 +28,13 @@
 		f="3.0" 
 		/>
         <!-- choinki na najeździe i szerokość --><guardrail z1="-0.4" z2="0.4" x="-338" />
-        <startgate default="11" max="53" step="0.50" wind="2.1" z1="-1.7" z2="1.7" pz1="-1.1" pz2="1.1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
+        <startgate default="13" max="53" step="0.50" wind="2.1" z1="-1.7" z2="1.7" pz1="-1.1" pz2="1.1" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585" />
         <startbanner z="0" text="JADOWNIKI|SKOCZNIA BOCHENIEC" textsize="0.1" />
         <gatenumbers z="+1.4" y="+0.011" size="0.165" c1="0xff452E3C" c2="0x59FFF000"/>
 		<frame bh="0.1" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
         <flag x="0.0" z="1.72" hf="1.1" pf="1.5" hp="11.5" rb="0.03" rt="0.03" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
         <twigs lz="1.0" rz="-1.0" x="-338" />
-		<track type="ceramic" snow="true"/>
+		<track type="ceramic" snow="false"/>
     </inrun>
 	
 	    <!-- inrun tower construction -->
